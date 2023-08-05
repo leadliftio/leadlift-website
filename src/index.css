@@ -1,13 +1,89 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+/* Tailwindcss configs */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reused styles */
+@layer components {
+  .social-media-icon {
+    @apply bg-brandGreen w-9 h-9 flex justify-center items-center p-2 rounded-full border-none cursor-pointer hover:bg-brandGreen/90
+    /* @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75; */;
+  }
+}
+
+input:focus,
+select:focus {
+  border: none;
+  outline: 2px solid rgb(80 200 120 / var(--tw-bg-opacity));
+  transition: all;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M11.9996 6H14.6696C17.9796 6 19.3396 8.35 17.6796 11.22L16.3396 13.53L14.9996 15.84C13.3396 18.71 10.6296 18.71 8.96956 15.84L7.62956 13.53L6.28956 11.22C4.65956 8.35 6.00956 6 9.32956 6H11.9996Z" stroke="#999999" stroke-opacity="0.6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+.overlay {
+  opacity: 0.800000011920929;
+  background: radial-gradient(
+    73.32% 73.19% at 49.97% 26.82%,
+    rgba(220, 199, 196, 0.9) 20.62%,
+    rgba(220, 209, 196, 0.9) 35.53%,
+    rgba(207, 202, 225, 0.9) 60.21%,
+    rgba(202, 201, 197, 0.9) 79.84%,
+    rgba(229, 225, 184, 0.9) 99.57%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.triangle {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent; /* Adjust the width as needed */
+  border-right: 400px solid transparent; /* Adjust the width as needed */
+  border-bottom: 400px solid white; /* Adjust the height as needed */
+  border-bottom-left-radius: 8px;
 }
