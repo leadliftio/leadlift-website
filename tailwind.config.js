@@ -29,6 +29,10 @@ module.exports = {
       raleway: ["Raleway", "sans-serif"],
       outfit: ["Outfit", "sans-serif"],
     },
+    // screens: {
+    //   md: "800px",
+    //   // => @media (min-width: 992px) { ... }
+    // },
   },
   plugins: [],
 };

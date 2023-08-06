@@ -39,6 +39,10 @@ h6 {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input:focus,
 select:focus {
   border: none;

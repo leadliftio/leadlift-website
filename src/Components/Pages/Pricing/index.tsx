@@ -51,31 +51,33 @@ const packages: any = [
 
 const Pricing = () => {
   return (
-    <div className="w-full px-[150px] text-center bg-gradient-to-b from-[#EDF0F8] to-[#CCCCE5]">
-      <div className="border border-solid border-[#D9D9D9] px-[24px] py-[50px]">
-        <h2 className="font-montserrat font-semibold text-brandBlack text-[40px] leading-[40px] mb-4 w-[70%] mx-auto">
-          Try Leadlift comprehensive suite of digital solutions
-        </h2>
-        <p className="mb-20 font-normal font-openSans text-brandBlack text-base">
-          <a
-            href="#"
-            className="underline decoration-brandBlue cursor-pointer mx-1">
-            Book a call
-          </a>
-          now and experience the best solution for your business' social media
-          platforms
-        </p>
-        <div className="w-full grid grid-cols-2 flex-wrap gap-16 text-center items-center justify-center">
-          {packages.map((item: any, i: any) => (
-            <div className="" key={item.id}>
-              <PricingCard
-                packageName={item.packageName}
-                packageDescription={item.packageDescription}
-                price={item.price}
-                packageFeatures={item.packageFeatures}
-              />
-            </div>
-          ))}
+    <div className="w-full px-[20px] md:px-[150px] text-center bg-gradient-to-b from-[#EDF0F8] to-[#CCCCE5] pb-[70px] md:pb-[100px]">
+      <div className="container mx-auto">
+        <div className="border border-solid border-[#D9D9D9] px-4 md:px-[24px] py-[25px] md:py-[50px] ">
+          <h2 className="font-montserrat font-semibold text-brandBlack text-[30px] md:text-[40px] leading-[40px] mb-4 w-full md:w-[70%] mx-auto">
+            Try Leadlift comprehensive suite of digital solutions
+          </h2>
+          <p className="mb-16 md:mb-20 font-normal font-openSans text-brandBlack text-[13px] md:text-base">
+            <a
+              href="#"
+              className="underline decoration-brandBlue cursor-pointer mx-1">
+              Book a call
+            </a>
+            now and experience the best solution for your business' social media
+            platforms
+          </p>
+          <div className="w-full flex flex-wrap gap-16 text-center items-center justify-center">
+            {packages.map((item: any, i: any) => (
+              <div className="w-full md:w-[45%]" key={item.id}>
+                <PricingCard
+                  packageName={item.packageName}
+                  packageDescription={item.packageDescription}
+                  price={item.price}
+                  packageFeatures={item.packageFeatures}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

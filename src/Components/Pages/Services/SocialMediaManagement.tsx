@@ -4,7 +4,9 @@ import social_media from "../../Assets/Images/sm_mngmt.png";
 
 const SocialMediaManagement = () => {
   return (
-    <div className="w-full h-full bg-white md:py-[100px]">
+    <div
+      className="w-full h-full bg-white md:py-[100px]"
+      id="social-media-management">
       <div className="container mx-auto">
         <div className="md:w-[60%] mx-auto flex gap-[100px] items-start justify-center">
           <div className="w-1/2">

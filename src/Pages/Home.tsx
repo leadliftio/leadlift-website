@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-[75px]">
+      <div className="pt-[75px] md:pt-[100px] overflow-x-hidden">
         <Hero />
         <TrustedPartners />
         <OurServices />

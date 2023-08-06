@@ -52,7 +52,7 @@ export const ScrollToTopButton = () => {
     <>
       {showButton && (
         <div
-          className="fixed bottom-[50px] right-[50px] w-5 md:w-10 h-5 md:h-10 bg-brandBlue rounded-full text-white flex justify-center items-center cursor-pointer text-[20px] transition-opacity duration-300 ease-in-out z-[9999]"
+          className="fixed bottom-[50px] right-[50px] w-8 md:w-10 h-8 md:h-10 bg-brandBlue rounded-full text-white flex justify-center items-center cursor-pointer text-[20px] transition-all duration-500 ease-in-out z-[9999]"
           onClick={handleScrollToTop}>
           <FaArrowUp />
         </div>

@@ -42,12 +42,13 @@ const Hero = () => {
   });
 
   return (
-    <div className="w-screen h-screen bg-white relative">
+    <div className="w-screen h-[800px] md:h-screen bg-white relative container mx-auto">
       <div className="w-full h-full text-center flex justify-center md:items-center">
+        {/* <div className="container mx-auto"> */}
         <div className="flex flex-col md:justify-center items-center">
-          <div className="w-full md:w-[700px] mx-auto text-center px-[45px] pt-[24px] pb-0">
+          <div className="w-full md:w-[700px] mx-auto text-center px-[45px] pt-[24px] pb-0 mt-10 md:mt-0">
             <animated.h2
-              className="font-montserrat text-[28px] md:text-[45px] font-bold text-brandBlue mb-[10px]"
+              className="font-montserrat text-[26px] md:text-[45px] font-bold text-brandBlue mb-[10px]"
               style={fadeUp}>
               Elevate your brand, engage your audience, and drive results with
               <span className="text-brandGreen mx-1">Leadlift</span>{" "}
@@ -91,15 +92,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[465px] h-[465px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[615px] h-[615px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[765px] h-[765px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-
       <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1000px] h-[1000px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1300px] h-[1300px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1600px] h-[1600px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-
       {/* Floating Cards */}
       <div className="hidden md:block">
         <div className="absolute top-36 left-36">
@@ -136,6 +134,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 

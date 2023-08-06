@@ -21,7 +21,7 @@ const CustomSelect = ({
     <div>
       <label
         htmlFor={name}
-        className="mb-[4px] text-[#23282B] font-montserrat text-base font-medium">
+        className="mb-[4px] text-[#23282B] font-montserrat t text-[13px] md:text-base font-medium">
         {label}
       </label>
       <select

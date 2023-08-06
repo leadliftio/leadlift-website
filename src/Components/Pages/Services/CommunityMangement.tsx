@@ -4,7 +4,9 @@ import { SolidGreenButton } from "../../Buttons";
 
 const CommunityMangement = () => {
   return (
-    <div className="w-full h-full bg-[#EDECF6] md:py-[100px]">
+    <div
+      className="w-full h-full bg-[#EDECF6] md:py-[100px]"
+      id="community-management">
       <div className="container mx-auto">
         <div className="md:w-[60%] mx-auto flex gap-[100px] items-start justify-center">
           <div className="w-1/2">

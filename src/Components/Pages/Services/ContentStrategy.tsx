@@ -4,7 +4,7 @@ import { SolidGreenButton } from "../../Buttons";
 
 const ContentStrategy = () => {
   return (
-    <div className="w-full h-full bg-white md:py-[100px]">
+    <div className="w-full h-full bg-white md:py-[100px]" id="content-strategy">
       <div className="container mx-auto">
         <div className="md:w-[60%] mx-auto flex gap-[100px] items-start justify-center">
           <div className="w-1/2">
