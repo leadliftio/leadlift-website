@@ -33,7 +33,7 @@ const trainingPerks = [
 const FreeTrainingSection = () => {
   return (
     <div className="container mx-auto">
-      <div className="w-full px-[20px] md:px-[150px] py-[64px] md:py-[100px] flex flex-col md:flex-row gap-[120px] bg-white">
+      <div className="w-full px-[16px] md:px-[150px] py-[64px] md:py-[100px] flex flex-col md:flex-row gap-[120px] bg-white">
         <div className="section-content flex-1">
           <div className="section-title text-brandBlue font-montserrat font-semibold text-[20px] mb-[10px] md:mb-[20px]">
             Free On-Demand Training:

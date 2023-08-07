@@ -56,7 +56,7 @@ const Navbar = () => {
       <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px-[150px] fixed z-[9999] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto">
           <div className="w-full flex items-center justify-between">
-            <Link to={"/"} className="w-[95px]">
+            <Link to={"/"} className="w-[95px] md:w-[230px]">
               <img src={brandLogo} alt="LeadLift" />
             </Link>
 
@@ -120,12 +120,37 @@ const Navbar = () => {
         }`}>
         <div className="h-[90%] pt-[75px] pb-[16px] flex flex-col justify-between relative z-50">
           <div>
-            <Link
+            {/* <Link
               to=""
               className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px]">
               <span>Services</span>
               <CustomDropdownIcon />
-            </Link>
+            </Link> */}
+            <div className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px] gap-[6px] group relative">
+              <Link to="/our-services">Services</Link>
+              <div className="cursor-pointer" onClick={openDropdown}>
+                <CustomDropdownIcon />
+              </div>
+              <div
+                className={`dropdown absolute top-10 bg-white w-max rounded-[8px] p-[12px] shadow-card transition-opacity duration-[450ms] ${
+                  isDropdownOpen
+                    ? "opacity-100"
+                    : "opacity-0 pointer-events-none"
+                }`}
+                ref={dropdownRef}>
+                {/* Dropdown */}
+                <div className=" flex flex-col gap-[6px] text-brandBlack font-openSans text-[14px] font-normal">
+                  <a href="/our-services/#social-media-management">
+                    Social media management
+                  </a>
+                  <a href="/our-services/#content-creation">Content creation</a>
+                  <a href="/our-services/#content-strategy">Content strategy</a>
+                  <a href="/our-services/#community-management">
+                    Community management
+                  </a>
+                </div>
+              </div>
+            </div>
             <Link
               to="/pricing"
               className="text-brandBlack font-medium font-outfit text-[24px]">

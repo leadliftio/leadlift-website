@@ -12,7 +12,7 @@ const OurServices = () => {
     <div>
       <div className="container mx-auto">
         <div className="w-full bg-white z-[1000] relative">
-          <div className="py-[40px] mx-auto flex justify-center">
+          <div className="pt-[20px] pb-[16px] md:py-[40px] mx-auto flex justify-center">
             <p
               className="font-montserrat font-bold text-brandBlue text-[28px] md:text-[45px]"
               data-aos="fade-down"
@@ -34,12 +34,13 @@ const OurServices = () => {
                 </div>
 
                 <div className="flex flex-col-reverse md:flex-row w-full h-full">
-                  <div className="w-full md:w-7/12 flex flex-col h-full justify-center mb-[90px]">
-                    <div
-                      className="md:ml-[150px] mb-[40px] z-50"
-                      data-aos="fade-right"
-                      data-aos-duration="600"
-                      data-aos-easing="ease-in-sine">
+                  <div
+                    className="w-full md:w-7/12 flex flex-col h-full justify-center mb-[90px]"
+                    data-aos="fade-down"
+                    data-aos-offset="500"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-sine">
+                    <div className="md:ml-[150px] mb-[40px] z-50">
                       <ServiceCard
                         name="Content strategy"
                         description="We develop a comprehensive content strategy to ensure all social media activities align with our clients' broader professional goals."
@@ -47,9 +48,9 @@ const OurServices = () => {
                     </div>
                     <div
                       className="md:ml-[400px] z-50"
-                      data-aos="fade-down"
-                      data-aos-offset="200"
-                      data-aos-duration="750"
+                      // data-aos="fade-down"
+                      // data-aos-offset="200"
+                      // data-aos-duration="400"
                       data-aos-easing="ease-in-sine">
                       <ServiceCard
                         name="Community management"
@@ -57,7 +58,12 @@ const OurServices = () => {
                       />
                     </div>
                   </div>
-                  <div className="w-full md:w-5/12 flex justify-end md:justify-center items-end md:mb-0 mb-[-75px]">
+                  <div
+                    className="w-full md:w-5/12 flex justify-end md:justify-center items-end md:mb-0 mb-[-75px]"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-sine">
                     <img src={person1} alt="" className="md:w-fit w-1/2" />
                   </div>
                 </div>
@@ -77,10 +83,20 @@ const OurServices = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row w-full h-full">
-                  <div className="w-full md:w-5/12 flex justify-start md:justify-center items-end md:mb-0 mb-[-50px]">
+                  <div
+                    className="w-full md:w-5/12 flex justify-start md:justify-center items-end md:mb-0 mb-[-50px]"
+                    data-aos="fade-right"
+                    data-aos-offset="500"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-sine">
                     <img src={person2} alt="" className="md:w-fit w-1/2" />
                   </div>
-                  <div className="w-full md:w-7/12 flex flex-col h-full justify-center mb-[90px]">
+                  <div
+                    className="w-full md:w-7/12 flex flex-col h-full justify-center mb-[90px]"
+                    data-aos="fade-down"
+                    data-aos-offset="500"
+                    data-aos-duration="750"
+                    data-aos-easing="ease-in-sine">
                     <div className="md:ml-[300px] mb-[20px] md:mb-[40px] z-50">
                       <ServiceCard
                         name="Content strategy"
