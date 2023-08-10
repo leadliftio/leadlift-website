@@ -15,9 +15,7 @@ const CommunityMangement = () => {
             data-aos-offset="100"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false">
+            data-aos-easing="ease-in-out">
             <p className="text-base font-montserrat font-semibold text-brandBlue mb-[10px]">
               Community Management
             </p>
@@ -38,9 +36,7 @@ const CommunityMangement = () => {
             data-aos-offset="100"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false">
+            data-aos-easing="ease-in-out">
             <div className="w-full border-solid border-[10px] border-[#DDDDDF] rounded-[10px]">
               <img src={community_mngmt} alt="" className="w-full" />
             </div>
