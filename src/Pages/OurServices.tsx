@@ -6,6 +6,7 @@ import ContentCreation from "../Components/Pages/Services/ContentCreation";
 import ContentStrategy from "../Components/Pages/Services/ContentStrategy";
 import CommunityMangement from "../Components/Pages/Services/CommunityMangement";
 import Hero from "../Components/Pages/Services/Hero";
+import ServicesCta from "../Components/Pages/Services/ServicesCta";
 
 const OurServicesPage = () => {
   return (
@@ -13,7 +14,8 @@ const OurServicesPage = () => {
       <Navbar />
       <div className="pt-[75px] md:pt-[100px]">
         <Hero />
-        <div className="w-full bg-white py-[40px] text-center font-bold font-montserrat md:text-[45px] text-brandBlue">
+        <ServicesCta />
+        <div className="w-full bg-white py-[40px] text-center font-bold font-montserrat text-[28px] md:text-[45px] text-brandBlue">
           Our Services
         </div>
         <SocialMediaManagement />

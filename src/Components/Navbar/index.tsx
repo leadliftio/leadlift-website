@@ -18,6 +18,7 @@ const Navbar = () => {
   const [isOpen, setOpen] = React.useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
   const dropdownRef = React.useRef<any>(null);
+  const mobileNavRef = React.useRef<any>(null);
 
   const handleBookACall = () => {
     navigate("/book-a-call");
@@ -34,12 +35,12 @@ const Navbar = () => {
   };
 
   // React.useEffect(() => {
-  //   document.addEventListener("click", handleOutsideClick);
-
-  //   return () => {
-  //     document.removeEventListener("click", handleOutsideClick);
-  //   };
-  // }, []);
+  if (!isOpen) {
+    document.body.style.overflowY = "scroll";
+  } else {
+    document.body.style.overflowY = "hidden";
+  }
+  // }, [isOpen]);
 
   React.useEffect(() => {
     if (isDropdownOpen) {
@@ -51,6 +52,7 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isDropdownOpen]);
+
   return (
     <>
       <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px-[150px] fixed z-[9999] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
@@ -114,10 +116,12 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      {/* <div className="w-screen h-screen overflow-hidden"> */}
       <div
-        className={`w-full bg-[#EDF0F8] h-[550px] rounded-[25px] px-[16px] py-[24px] fixed z-[1000] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
+        className={`w-full bg-[#EDF0F8] h-[550px] rounded-[25px] px-[16px] py-[24px] fixed z-[8080] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
           isOpen ? "translate-y-[0]" : "translate-y-[-550px]"
-        }`}>
+        }`}
+        ref={mobileNavRef}>
         <div className="h-[90%] pt-[75px] pb-[16px] flex flex-col justify-between relative z-50">
           <div>
             {/* <Link
@@ -126,8 +130,10 @@ const Navbar = () => {
               <span>Services</span>
               <CustomDropdownIcon />
             </Link> */}
-            <div className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px] gap-[6px] group relative">
-              <Link to="/our-services">Services</Link>
+            <div className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px] group relative">
+              <Link to="/our-services" onClick={() => setOpen(false)}>
+                Services
+              </Link>
               <div className="cursor-pointer" onClick={openDropdown}>
                 <CustomDropdownIcon />
               </div>
@@ -153,7 +159,8 @@ const Navbar = () => {
             </div>
             <Link
               to="/pricing"
-              className="text-brandBlack font-medium font-outfit text-[24px]">
+              className="text-brandBlack font-medium font-outfit text-[24px]"
+              onClick={() => setOpen(false)}>
               Pricing
             </Link>
           </div>
@@ -189,8 +196,9 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* <div className="absolute top-0 left-0 w-full h-screen bg-black/40 z-10" /> */}
+        {/* <div className="relative top-0 left-0 w-full h-screen bg-black/40" /> */}
       </div>
+      {/* </div> */}
     </>
   );
 };
