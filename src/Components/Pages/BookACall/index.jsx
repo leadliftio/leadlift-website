@@ -84,7 +84,7 @@ const BookACall = () => {
             </div>
           </div>
           <div className="flex-1 w-full flex items-center">
-            <div className="form-container">
+            <div className="form-container w-full">
               <form className="w-full bg-white p-[24px] md:p-10 rounded-[20px] shadow-card">
                 <div className="flex flex-col gap-[20px] md:gap-[32px] mb-[20px]">
                   <div className="w-full grid grid-cols-2 gap-4 md:gap-8 items-start">
@@ -133,9 +133,9 @@ const BookACall = () => {
                       className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium">
                       Who are you?
                     </label>
-                    <div className="flex gap-[45px] items-center">
-                      <div className="radio radio-1 flex items-center gap-4">
-                        <p className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-normal">
+                    <div className="flex flex-col md:flex-row gap-[20px] md:gap-[45px] items-start md:items-center">
+                      <div className="radio radio-1 flex items-center gap-4 w-full">
+                        <p className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-normal w-1/2 md:w-fit">
                           An Individual
                         </p>
                         <input
@@ -146,8 +146,8 @@ const BookACall = () => {
                           className="text-[#23282B] font-montserrat text-base font-medium shadow-card focus:outline-none"
                         />
                       </div>
-                      <div className="radio radio-1 flex items-center gap-4">
-                        <p className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-normal">
+                      <div className="radio radio-1 flex items-center gap-4 w-full">
+                        <p className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-normal w-1/2 md:w-fit">
                           A Company
                         </p>
                         <input
@@ -158,8 +158,8 @@ const BookACall = () => {
                           className="text-[#23282B] font-montserrat text-base font-medium shadow-card focus:outline-none "
                         />
                       </div>
-                      <div className="radio radio-1 flex items-center gap-4">
-                        <p className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-normal">
+                      <div className="radio radio-1 flex items-center gap-4 w-full">
+                        <p className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-normal w-1/2 md:w-fit">
                           An Agency
                         </p>
                         <input
