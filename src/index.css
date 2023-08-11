@@ -91,3 +91,12 @@ select {
   border-bottom: 400px solid white; /* Adjust the height as needed */
   border-bottom-left-radius: 8px;
 }
+
+/* Calendly Popup styles override for mobile  */
+.calendly-popup {
+  padding: 16px;
+}
+.calendly-overlay .calendly-popup {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
