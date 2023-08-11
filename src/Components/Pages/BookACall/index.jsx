@@ -48,7 +48,7 @@ const BookACall = () => {
     setCountriesList(bookingForm.getCountries());
   }, []);
 
-  const handlePersonTypeChange = (e: any) => {
+  const handlePersonTypeChange = (e) => {
     setPersonType(e.target.value);
   };
   return (
