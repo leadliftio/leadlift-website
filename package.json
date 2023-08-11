@@ -16,6 +16,7 @@
     "countrycitystatejson": "^21.3.2702",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
+    "react-calendly": "^4.1.1",
     "react-country-state-city": "^1.0.8",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",

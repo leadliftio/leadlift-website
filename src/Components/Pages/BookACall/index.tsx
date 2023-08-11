@@ -15,6 +15,9 @@ import {
 import CustomSelect from "../../CustomSelect";
 import { SolidGreenButton } from "../../Buttons";
 
+import { InlineWidget } from "react-calendly";
+import { PopupButton } from "react-calendly";
+
 const bookingForm = require("countrycitystatejson");
 
 const features = [
@@ -214,8 +217,26 @@ const BookACall = () => {
                       optionsList={countriesList || []}
                     />
                   </div>
-                  <div className="text-brandGreen no-underline font-medium font-montserrat text-[13px] md:text-base cursor-pointer">
+                  {/* <div className="text-brandGreen no-underline font-medium font-montserrat text-[13px] md:text-base cursor-pointer">
                     Click to Schedule an Appointment
+                  </div> */}
+                  <div>
+                    <PopupButton
+                      url="https://calendly.com/leadliftio"
+                      /*
+                       * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                       * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                       */
+                      rootElement={document.getElementById("root")}
+                      text=" Click to Schedule an Appointment"
+                      styles={{
+                        fontWeight: 500,
+                        fontFamily: "Montserrat",
+                        fontSize: "16px",
+                        cursor: "pointer",
+                        color: "#50C878",
+                      }}
+                    />
                   </div>
                   <div className="w-full">
                     <CustomMultiLineInput
@@ -234,6 +255,7 @@ const BookACall = () => {
                   accordance with its Terms of use and Privacy policy.
                 </p>
               </form>
+              {/* <InlineWidget url="https://calendly.com/leadliftio" /> */}
             </div>
           </div>
         </div>
