@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PolicyItem = ({ header, children }: any) => {
   return (
@@ -23,13 +24,17 @@ const PrivacyPolicy = () => {
         Effective Date: August 1, 2023
       </p>
       <p className="font-openSans text-[18px] font-normal">
-        Welcome to Leadlift.io ("Website"), the official website of Leadlift, a
-        Social Media Marketing Agency. At Leadlift, we are committed to
-        protecting your privacy and ensuring the security of your personal
-        information. This Privacy Policy outlines how we collect, use, and
-        safeguard the data and information you provide while using this Website.
-        By accessing and using this Website, you consent to the practices
-        described in this Privacy Policy.
+        Welcome to{" "}
+        <Link to="/" className="text-brandBlue mx-1 font-montserrat font-bold">
+          {" "}
+          Leadlift.io
+        </Link>
+        , the official website of Leadlift, a Social Media Marketing Agency. At
+        Leadlift, we are committed to protecting your privacy and ensuring the
+        security of your personal information. This Privacy Policy outlines how
+        we collect, use, and safeguard the data and information you provide
+        while using this Website. By accessing and using this Website, you
+        consent to the practices described in this Privacy Policy.
       </p>
       <div className="my-[45px]">
         <PolicyItem header="1. Information We Collect:">
@@ -51,7 +56,7 @@ const PrivacyPolicy = () => {
             2.1. We may use the information collected for the following
             purposes:
           </p>
-          <ul className="flex flex-col gap-[8px] list-disc list-inside">
+          <ul className="flex flex-col gap-[8px] list-disc list-inside indent-8">
             <li>To provide and improve our services and offerings.</li>
             <li> To respond to your inquiries, comments, or requests. </li>
             <li>
@@ -158,8 +163,8 @@ const PrivacyPolicy = () => {
           data practices, please contact us at
           <a
             href="mailto:contact@leadlift.io"
-            className="text-brandBlue cursor-pointer underline">
-            contact@leadlift.io.{" "}
+            className="text-brandBlue cursor-pointer underline font-semibold font-montserrat mx-1">
+            contact@leadlift.io.
           </a>
         </p>
       </div>

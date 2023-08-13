@@ -14,10 +14,10 @@ const PolicyPagesLayout = ({ children }: any) => {
     <>
       <Navbar />
       <div className="pt-[75px] md:pt-[100px]">
-        <div className="w-screen h-full px-[150px] py-[100px]">
+        <div className="w-screen h-full px-[16px] md:px-[150px] py-[20px] md:py-[100px]">
           <div className="container mx-auto">
-            <div className="w-full flex flex-start gap-[50px]">
-              <div className="w-1/4 side-bar">
+            <div className="w-full flex flex-col md:flex-row flex-start gap-[50px]">
+              <div className="w-full md:w-1/4 side-bar">
                 <div className="flex flex-col gap-[12px] text-black font-montserrat text-base font-semibold">
                   <Link
                     to="/terms-of-use"
@@ -39,7 +39,7 @@ const PolicyPagesLayout = ({ children }: any) => {
                   </Link>
                 </div>
               </div>
-              <div className="w-3/4">{children}</div>
+              <div className="w-full md:w-3/4">{children}</div>
             </div>
           </div>
         </div>

@@ -174,7 +174,7 @@ const BookACall = () => {
                   </div>
 
                   {personType == "agency" && (
-                    <div className="w-full grid grid-cols-2 gap-4 md:gap-8 items-start">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-start">
                       <div>
                         <CustomInput
                           name="agency_name"
@@ -192,7 +192,7 @@ const BookACall = () => {
                     </div>
                   )}
                   {personType == "company" && (
-                    <div className="w-full grid grid-cols-2 gap-4 md:gap-8 items-start">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-start">
                       <div>
                         <CustomInput
                           name="company_name"

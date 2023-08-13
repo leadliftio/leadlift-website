@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PolicyItem = ({ header, children }: any) => {
   return (
@@ -16,19 +17,28 @@ const PolicyItem = ({ header, children }: any) => {
 const TermsOfUsePolicy = () => {
   return (
     <div className="text-brandBlack font-montserrat">
-      <h1 className="font-bold font-montserrat text-[45px]  mb-[15px]">
+      <h1 className="font-bold font-montserrat text-[28px] md:text-[45px]  mb-[15px]">
         Leadlift.io Terms of Use Policy
       </h1>
-      <p className="font-semibold text-[20px] mb-[25px]">
+      <p className="font-semibold text-[16px] md:text-[20px] mb-[25px]">
         Effective Date: August 1, 2023
       </p>
-      <p className="font-openSans text-[18px] font-normal">
-        Welcome to Leadlift.io ("Website"), the official website of Leadlift, a
-        Social Media Marketing Agency. Before using this Website, please
-        carefully read and understand the following Terms of Use ("Terms"). By
-        accessing and using this Website, you agree to be bound by these Terms.
-        If you do not agree with any part of these Terms, do not access or use
-        this Website.
+      <p className="font-openSans text-[16px] md:text-[18px] font-normal">
+        Welcome to{" "}
+        <Link to="/" className="text-brandBlue mx-1 font-montserrat font-bold">
+          Leadlift.io
+        </Link>{" "}
+        the official website of Leadlift, a Social Media Marketing Agency.
+        Before using this Website, please carefully read and understand the
+        following
+        <Link
+          to="/terms-of-use"
+          className="text-brandBlue mx-1 font-montserrat font-bold">
+          Terms of Use
+        </Link>
+        . By accessing and using this Website, you agree to be bound by these
+        Terms. If you do not agree with any part of these Terms, do not access
+        or use this Website.
       </p>
       <div className="my-[45px]">
         <PolicyItem header="1. Age Requirement:">
