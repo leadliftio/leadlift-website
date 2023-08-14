@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa6";
 
 import { Squash as Hamburger } from "hamburger-react";
+import MenuIcon from "../Assets/Images/menu@2x.svg";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -58,8 +59,8 @@ const Navbar = () => {
       <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px-[150px] fixed z-[9999] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto">
           <div className="w-full flex items-center justify-between">
-            <Link to={"/"} className="w-[95px] md:w-[230px]">
-              <img src={brandLogo} alt="LeadLift" />
+            <Link to={"/"} className="">
+              <img src={brandLogo} alt="LeadLift" className="h-[32px]" />
             </Link>
 
             <div className="hidden nav-items lg:flex items-center gap-8">
@@ -103,15 +104,18 @@ const Navbar = () => {
                 Book a call
               </SolidGreenButton>
             </div>
-            <div className="block md:hidden">
-              <Hamburger
+            <div
+              className="block md:hidden w-8 h-8 border border-solid border-[#D3D3D3] rounded-[4px]"
+              onClick={() => setOpen(!isOpen)}>
+              {/* <Hamburger
                 toggled={isOpen}
                 toggle={setOpen}
                 color="#000080"
                 label="Show menu"
                 size={24}
                 rounded
-              />
+              /> */}
+              <img src={MenuIcon} alt="" />
             </div>
           </div>
         </div>

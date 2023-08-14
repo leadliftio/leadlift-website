@@ -13,12 +13,7 @@ const OurServices = () => {
       <div className="container mx-auto">
         <div className="w-full bg-white z-[1000] relative">
           <div className="pt-[20px] pb-[16px] md:py-[40px] mx-auto flex justify-center">
-            <p
-              className="font-montserrat font-bold text-brandBlue text-[28px] md:text-[45px]"
-              data-aos="fade-down"
-              data-aos-offset="100"
-              data-aos-easing="ease-out"
-              data-aos-duration="1000">
+            <p className="font-montserrat font-bold text-brandBlue text-[28px] md:text-[45px]">
               Our Services
             </p>
           </div>
@@ -39,7 +34,9 @@ const OurServices = () => {
                     data-aos="fade-down"
                     data-aos-offset="500"
                     data-aos-duration="750"
-                    data-aos-easing="ease-in-sine">
+                    data-aos-easing="ease-in-sine"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
                     <div className="md:ml-[150px] mb-[40px] z-50">
                       <ServiceCard
                         name="Content strategy"
@@ -63,7 +60,9 @@ const OurServices = () => {
                     data-aos="fade-left"
                     data-aos-offset="500"
                     data-aos-duration="750"
-                    data-aos-easing="ease-in-sine">
+                    data-aos-easing="ease-in-sine"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
                     <img src={person1} alt="" className="md:w-fit w-1/2" />
                   </div>
                 </div>
@@ -88,7 +87,9 @@ const OurServices = () => {
                     data-aos="fade-right"
                     data-aos-offset="500"
                     data-aos-duration="750"
-                    data-aos-easing="ease-in-sine">
+                    data-aos-easing="ease-in-sine"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
                     <img src={person2} alt="" className="md:w-fit w-1/2" />
                   </div>
                   <div
@@ -96,7 +97,9 @@ const OurServices = () => {
                     data-aos="fade-down"
                     data-aos-offset="500"
                     data-aos-duration="750"
-                    data-aos-easing="ease-in-sine">
+                    data-aos-easing="ease-in-sine"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
                     <div className="md:ml-[300px] mb-[20px] md:mb-[40px] z-50">
                       <ServiceCard
                         name="Content strategy"

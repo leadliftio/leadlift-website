@@ -42,22 +42,23 @@ const Hero = () => {
   });
 
   return (
-    <div className="w-screen h-[800px] md:h-screen bg-white relative container mx-auto">
-      <div className="w-full h-full text-center flex justify-center md:items-center">
+    <div className="w-screen h-full md:h-[900px] bg-white relative container mx-auto">
+      <div className="w-full h-full text-center flex justify-center md:items-center mb-10">
         {/* <div className="container mx-auto"> */}
         <div className="flex flex-col md:justify-center items-center">
-          <div className="w-full md:w-[700px] mx-auto text-center px-[45px] pt-[24px] pb-0 mt-10 md:mt-0">
+          <div className="w-full md:w-[700px] mx-auto text-center px-[46px] pt-[24px] md:pt-0 pb-0 mt-0 md:mt-0">
             <animated.h2
-              className="font-montserrat text-[26px] md:text-[45px] font-bold text-brandBlue mb-[10px]"
+              className="font-montserrat text-[28px] md:text-[45px] font-bold text-brandBlue mb-[20px] leading-[normal]"
               style={fadeUp}>
               Elevate your brand, engage your audience, and drive results with
               <span className="text-brandGreen mx-1">Leadlift</span>{" "}
               comprehensive suite of digital solutions
             </animated.h2>
+            <animated.div style={fadeDown} className="z-50">
+              <SolidGreenButton width="100%">Book a call</SolidGreenButton>
+            </animated.div>
           </div>
-          <animated.div style={fadeDown} className="z-50">
-            <SolidGreenButton width="350px">Book a call</SolidGreenButton>
-          </animated.div>
+
           <div className="grid grid-cols-3 gap-[25px] items-center p-[20px] mt-[36px] z-50 md:hidden">
             <div>
               <HeroCards
@@ -95,12 +96,12 @@ const Hero = () => {
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[465px] h-[465px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[615px] h-[615px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[765px] h-[765px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1000px] h-[1000px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1300px] h-[1300px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1600px] h-[1600px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
+      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1200px] h-[1200px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
+      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1500px] h-[1500px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
+      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1800px] h-[1800px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       {/* Floating Cards */}
       <div className="hidden md:block">
-        <div className="absolute top-36 left-36">
+        <div className="absolute top-36 left-0">
           <HeroCards
             illustration={socialMediaMarketing}
             name={"Social media management"}
@@ -108,7 +109,7 @@ const Hero = () => {
             delay={0}
           />
         </div>
-        <div className="absolute top-36 right-36">
+        <div className="absolute top-36 right-0">
           <HeroCards
             illustration={communityMngmt}
             name={"Community management"}
@@ -116,7 +117,7 @@ const Hero = () => {
             delay={50}
           />
         </div>
-        <div className="absolute bottom-16 left-80">
+        <div className="absolute bottom-16 left-24">
           <HeroCards
             illustration={contentCrtn}
             name={"Content creation"}
@@ -124,7 +125,7 @@ const Hero = () => {
             delay={0}
           />
         </div>
-        <div className="absolute bottom-16 right-80">
+        <div className="absolute bottom-16 right-24">
           <HeroCards
             illustration={contentStrtgy}
             name={"Content strategy"}

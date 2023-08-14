@@ -5,7 +5,8 @@ import {
   GreenDotsGroup,
   RoundedCheckMarkIcon,
 } from "../../../Assets/Icons";
-import trainingImage from "../../../Assets/Images/trainingImage.png";
+import trainingImage from "../../../Assets/Images/training_section_img.jpeg";
+import action_frame from "../../../Assets/Images/action_frame.png";
 
 const trainingPerks = [
   {
@@ -76,6 +77,11 @@ const FreeTrainingSection = () => {
                   src={trainingImage}
                   alt=""
                   className="rounded-[8px] w-full"
+                />
+                <img
+                  src={action_frame}
+                  alt=""
+                  className="mx-auto mt-[-30px] md:mt-[-50px] px-2"
                 />
                 <div className="absolute bottom-[-20px] left-[-28px]">
                   <GreenDotsGroup />
