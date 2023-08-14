@@ -7,7 +7,7 @@ const PricingPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="pt-[75px] md:pt-[100px]">
+      <div className="pt-[60px] md:pt-[75px]">
         <Pricing />
       </div>
       <Footer />
