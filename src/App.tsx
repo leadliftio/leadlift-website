@@ -8,6 +8,8 @@ import PricingPage from "./Pages/Pricing";
 import PrivacyPolicyPage from "./Pages/PrivacyPolicy";
 import TermsOfUsePolicyPage from "./Pages/TermsOfUsePolicy";
 import OurServicesPage from "./Pages/OurServices";
+import BlogPost from "./Components/Pages/Blog/BlogPost";
+import BlogPage from "./Pages/Blog";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-use" element={<TermsOfUsePolicyPage />} />
         <Route path="/our-services" element={<OurServicesPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </div>
   );

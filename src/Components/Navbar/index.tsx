@@ -98,6 +98,11 @@ const Navbar = () => {
                 className="text-brandBlack font-normal font-openSans text-[20px]">
                 Pricing
               </Link>
+              <Link
+                to="/blog"
+                className="text-brandBlack font-normal font-openSans text-[20px]">
+                Blog
+              </Link>
             </div>
             <div className="hidden lg:flex">
               <SolidGreenButton width="200px" onClick={handleBookACall}>
@@ -127,14 +132,14 @@ const Navbar = () => {
         }`}
         ref={mobileNavRef}>
         <div className="h-[90%] pt-[75px] pb-[16px] flex flex-col justify-between relative z-50">
-          <div>
+          <div className="flex flex-col gap-[20px]">
             {/* <Link
               to=""
               className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px]">
               <span>Services</span>
               <CustomDropdownIcon />
             </Link> */}
-            <div className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px] group relative">
+            <div className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] group relative">
               <Link to="/our-services" onClick={() => setOpen(false)}>
                 Services
               </Link>
@@ -166,6 +171,12 @@ const Navbar = () => {
               className="text-brandBlack font-medium font-outfit text-[24px]"
               onClick={() => setOpen(false)}>
               Pricing
+            </Link>
+            <Link
+              to="/blog"
+              className="text-brandBlack font-medium font-outfit text-[24px]"
+              onClick={() => setOpen(false)}>
+              Blog
             </Link>
           </div>
           <div className="w-full">
