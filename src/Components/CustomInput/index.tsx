@@ -19,7 +19,7 @@ const CustomInput = ({
     <div>
       <label
         htmlFor={name}
-        className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium">
+        className="mb-[4px] text-[#23282B] font-montserrat text-base font-medium">
         {label}
       </label>
       <input
@@ -46,7 +46,7 @@ export const CustomMultiLineInput = ({
     <div>
       <label
         htmlFor={name}
-        className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium">
+        className="mb-[4px] text-[#23282B] font-montserrat text-base font-medium">
         {label}
       </label>
       <textarea
