@@ -2,7 +2,13 @@ import React from "react";
 import gradientLogo from "../../../Assets/Images/gradientLogo.png";
 import gradientIllustration from "../../../Assets/Images/gradientIllustration_2.png";
 
-import { OutlineLogo } from "../../../Assets/Icons";
+import {
+  ArchiveIcon,
+  CommandIcon,
+  DocumentFilterIcon,
+  OutlineLogo,
+  WalletIcon,
+} from "../../../Assets/Icons";
 import person1 from "../../../Assets/Images/person1_1.png";
 import person2 from "../../../Assets/Images/person2.png";
 import ServiceCard from "./ServiceCard";
@@ -39,8 +45,10 @@ const OurServices = () => {
                     data-aos-once="true">
                     <div className="md:ml-[150px] mb-[40px] z-50">
                       <ServiceCard
-                        name="Content strategy"
-                        description="We develop a comprehensive content strategy to ensure all social media activities align with our clients' broader professional goals."
+                        Icon={WalletIcon}
+                        name="Social media management"
+                        path="/our-services#social-media-management"
+                        description="We manage our clients' social media profiles, ensuring regular posting, engagement with followers, and the growth of their online presence."
                       />
                     </div>
                     <div
@@ -50,8 +58,10 @@ const OurServices = () => {
                       // data-aos-duration="400"
                       data-aos-easing="ease-in-sine">
                       <ServiceCard
-                        name="Community management"
-                        description="We foster a strong, engaged community around our clients' online presence by actively engaging with followers and creating a positive online environment."
+                        Icon={ArchiveIcon}
+                        name="Content management"
+                        path="/our-services#content-creation"
+                        description="We create high-quality, engaging content tailored to each client's brand and audience. "
                       />
                     </div>
                   </div>
@@ -102,13 +112,17 @@ const OurServices = () => {
                     data-aos-once="true">
                     <div className="md:ml-[300px] mb-[20px] md:mb-[40px] z-50">
                       <ServiceCard
+                        Icon={DocumentFilterIcon}
                         name="Content strategy"
+                        path="/our-services#content-strategy"
                         description="We develop a comprehensive content strategy to ensure all social media activities align with our clients' broader professional goals."
                       />
                     </div>
                     <div className="md:ml-[50px] z-50">
                       <ServiceCard
+                        Icon={CommandIcon}
                         name="Community management"
+                        path="/our-services#community-management"
                         description="We foster a strong, engaged community around our clients' online presence by actively engaging with followers and creating a positive online environment."
                       />
                     </div>

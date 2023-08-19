@@ -1,8 +1,10 @@
 import React from "react";
 import content_strtgy from "../../Assets/Images/cnt_strgy.png";
 import { SolidGreenButton } from "../../Buttons";
+import { useNavigate } from "react-router-dom";
 
 const ContentStrategy = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-full h-full bg-white py-[50px] md:py-[100px] px-4"
@@ -27,7 +29,7 @@ const ContentStrategy = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out">
-            <p className="text-base font-montserrat font-semibold text-brandBlue mb-[10px]">
+            <p className="text-[18px] font-montserrat font-semibold text-brandBlue mb-[10px]">
               Content Strategy
             </p>
             <p className="text-base font-normal font-openSans text-brandBlue mb-[20px]">
@@ -39,7 +41,11 @@ const ContentStrategy = () => {
               latest social media algorithms, we'll keep your content fresh,
               relevant, and impactful.
             </p>
-            <SolidGreenButton width="100%">Book a call</SolidGreenButton>
+            <SolidGreenButton
+              width="100%"
+              onClick={() => navigate("/book-a-call")}>
+              Book a call
+            </SolidGreenButton>
           </div>
         </div>
       </div>

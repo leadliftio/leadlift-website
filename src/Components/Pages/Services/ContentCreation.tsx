@@ -1,8 +1,10 @@
 import React from "react";
 import content_crtn from "../../Assets/Images/cntnt_ctn.png";
 import { SolidGreenButton } from "../../Buttons";
+import { useNavigate } from "react-router-dom";
 
 const ContentCreation = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-full h-full bg-[#EDECF6] py-[50px] md:py-[100px] px-4"
@@ -16,7 +18,7 @@ const ContentCreation = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out">
-            <p className="text-base font-montserrat font-semibold text-brandBlue mb-[10px]">
+            <p className="text-[18px] font-montserrat font-semibold text-brandBlue mb-[10px]">
               Content Creation
             </p>
             <p className="text-base font-normal font-openSans text-brandBlue mb-[20px]">
@@ -28,7 +30,11 @@ const ContentCreation = () => {
               attention-grabbing videos, or persuasive ad copy, we've got the
               creativity and expertise to make your brand stand out.
             </p>
-            <SolidGreenButton width="100%">Book a call</SolidGreenButton>
+            <SolidGreenButton
+              width="100%"
+              onClick={() => navigate("/book-a-call")}>
+              Book a call
+            </SolidGreenButton>
           </div>
           <div
             className="w-full md:w-1/2"

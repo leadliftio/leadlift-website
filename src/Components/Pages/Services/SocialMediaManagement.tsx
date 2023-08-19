@@ -1,8 +1,10 @@
 import React from "react";
 import { SolidGreenButton } from "../../Buttons";
 import social_media from "../../Assets/Images/sm_mngmt.png";
+import { useNavigate } from "react-router-dom";
 
 const SocialMediaManagement = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="w-full h-full bg-white pt-0 py-[50px] md:py-[100px] px-[16px]"
@@ -27,7 +29,7 @@ const SocialMediaManagement = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out">
-            <p className="text-base font-montserrat font-semibold text-brandBlue mb-[10px]">
+            <p className="text-[18px] font-montserrat font-semibold text-brandBlue mb-[10px]">
               Social Media Management
             </p>
             <p className="text-base font-normal font-openSans text-brandBlue mb-[20px]">
@@ -39,7 +41,11 @@ const SocialMediaManagement = () => {
               voice is consistent and your audience is engaged, all while
               increasing your reach and driving meaningful results.
             </p>
-            <SolidGreenButton width="100%">Book a call</SolidGreenButton>
+            <SolidGreenButton
+              width="100%"
+              onClick={() => navigate("/book-a-call")}>
+              Book a call
+            </SolidGreenButton>
           </div>
         </div>
       </div>

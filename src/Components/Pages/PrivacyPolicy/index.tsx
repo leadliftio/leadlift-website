@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
             2.1. We may use the information collected for the following
             purposes:
           </p>
-          <ul className="flex flex-col gap-[8px] list-disc list-inside indent-8">
+          <ul className="flex flex-col gap-[8px] list-disc list-inside">
             <li>To provide and improve our services and offerings.</li>
             <li> To respond to your inquiries, comments, or requests. </li>
             <li>

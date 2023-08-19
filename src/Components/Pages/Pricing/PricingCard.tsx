@@ -1,6 +1,7 @@
 import React from "react";
 import { RoundedCheckMarkIcon } from "../../Assets/Icons";
 import { SolidGreenButton } from "../../Buttons";
+import { useNavigate } from "react-router-dom";
 
 type pricingCardTypes = {
   packageName: string;
@@ -15,6 +16,7 @@ const PricingCard = ({
   price,
   packageFeatures,
 }: pricingCardTypes) => {
+  const navigate = useNavigate();
   return (
     <div className="w-full h-full  md:h-[700px] relative p-5 md:p-8 bg-white rounded-[20px] shadow-card text-left box-border">
       <div className="package-name font-montserrat font-semibold text-[28px] text-brandBlack mb-[16px] md:mb-[20px]">
@@ -27,7 +29,7 @@ const PricingCard = ({
         {price}{" "}
         <span className="text-[20px] md:text-[24px] mx-[2px]">/ month</span>
       </div>
-      <ul className="flex flex-col gap-[10px] md:gap-[12px] mb-[84px]">
+      <ul className="flex flex-col gap-[10px] md:gap-[12px] mb-[20px] md:mb-[84px]">
         {packageFeatures.map((feature, i) => (
           <li className="flex items-center gap-1" key={i}>
             <div>
@@ -39,8 +41,10 @@ const PricingCard = ({
           </li>
         ))}
       </ul>
-      <div className="relative md:absolute md:bottom-8 left-0 w-full md:px-8 mt-[100px] ">
-        <SolidGreenButton width="100%">Book a all</SolidGreenButton>
+      <div className="relative md:absolute md:bottom-8 left-0 w-full md:px-8 mt-[50px] md:mt-[100px] ">
+        <SolidGreenButton width="100%" onClick={() => navigate("/book-a-call")}>
+          Book a all
+        </SolidGreenButton>
       </div>
     </div>
   );

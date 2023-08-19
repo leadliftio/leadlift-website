@@ -6,6 +6,7 @@ import contentCrtn from "../../../Assets/Images/content_creation.png";
 import contentStrtgy from "../../../Assets/Images/content_strategy.png";
 import "animate.css";
 import { useSpring, animated } from "@react-spring/web";
+import { useNavigate } from "react-router-dom";
 
 const HeroCards = ({ illustration, name, delay, speed }: any) => {
   const styles = useSpring({
@@ -28,6 +29,7 @@ const HeroCards = ({ illustration, name, delay, speed }: any) => {
 };
 
 const Hero = () => {
+  const navigate = useNavigate();
   const fadeUp = useSpring({
     from: { opacity: 0, transform: "translateY(30px)" }, // Starting opacity and translation
     to: { opacity: 1, transform: "translateY(0px)" }, // Ending opacity and translation
@@ -55,7 +57,11 @@ const Hero = () => {
               comprehensive suite of digital solutions
             </animated.h2>
             <animated.div style={fadeDown} className="z-50">
-              <SolidGreenButton width="100%">Book a call</SolidGreenButton>
+              <SolidGreenButton
+                width="100%"
+                onClick={() => navigate("/book-a-call")}>
+                Book a call
+              </SolidGreenButton>
             </animated.div>
           </div>
 

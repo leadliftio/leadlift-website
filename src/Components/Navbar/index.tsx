@@ -12,6 +12,7 @@ import {
 
 import { Squash as Hamburger } from "hamburger-react";
 import MenuIcon from "../Assets/Images/menu@2x.svg";
+import CloseMenu from "../Assets/Images/Close_MD.svg";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -120,7 +121,11 @@ const Navbar = () => {
                 size={24}
                 rounded
               /> */}
-              <img src={MenuIcon} alt="" />
+              {!isOpen ? (
+                <img src={MenuIcon} alt="" />
+              ) : (
+                <img src={CloseMenu} alt="" />
+              )}
             </div>
           </div>
         </div>
@@ -131,55 +136,37 @@ const Navbar = () => {
           isOpen ? "translate-y-[0]" : "translate-y-[-550px]"
         }`}
         ref={mobileNavRef}>
-        <div className="h-[90%] pt-[75px] pb-[16px] flex flex-col justify-between relative z-50">
-          <div className="flex flex-col gap-[20px]">
-            {/* <Link
-              to=""
-              className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] mb-[20px]">
-              <span>Services</span>
-              <CustomDropdownIcon />
-            </Link> */}
-            <div className="text-brandBlack font-medium font-outfit text-[24px] flex items-center gap-[6px] group relative">
+        <div className="h-[90%] pt-[65px] pb-[16px] flex flex-col justify-between relative z-50">
+          <div className="flex flex-col gap-[20px] text-brandBlack font-normal font-openSans text-[20px]">
+            <div className="text-brandBlack flex items-center gap-[6px] group relative">
               <Link to="/our-services" onClick={() => setOpen(false)}>
                 Services
               </Link>
-              <div className="cursor-pointer" onClick={openDropdown}>
-                <CustomDropdownIcon />
-              </div>
-              <div
-                className={`dropdown absolute top-10 bg-white w-max rounded-[8px] p-[12px] shadow-card transition-opacity duration-[450ms] ${
-                  isDropdownOpen
-                    ? "opacity-100"
-                    : "opacity-0 pointer-events-none"
-                }`}
-                ref={dropdownRef}>
-                {/* Dropdown */}
-                <div className=" flex flex-col gap-[6px] text-brandBlack font-openSans text-[14px] font-normal">
-                  <a href="/our-services/#social-media-management">
-                    Social media management
-                  </a>
-                  <a href="/our-services/#content-creation">Content creation</a>
-                  <a href="/our-services/#content-strategy">Content strategy</a>
-                  <a href="/our-services/#community-management">
-                    Community management
-                  </a>
-                </div>
-              </div>
+            </div>
+            <div className=" flex flex-col gap-[15px] text-[#808080] font-openSans text-[18px] pb-4 font-normal border-b border-solid border-[#D9D9D9]">
+              <a href="/our-services/#social-media-management">
+                Social media management
+              </a>
+              <a href="/our-services/#content-creation">Content creation</a>
+              <a href="/our-services/#content-strategy">Content strategy</a>
+              <a href="/our-services/#community-management">
+                Community management
+              </a>
             </div>
             <Link
               to="/pricing"
-              className="text-brandBlack font-medium font-outfit text-[24px]"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className="pb-[20px] border-b border-solid border-[#D9D9D9]">
               Pricing
             </Link>
-            <Link
+            {/* <Link
               to="/blog"
               className="text-brandBlack font-medium font-outfit text-[24px]"
               onClick={() => setOpen(false)}>
               Blog
-            </Link>
+            </Link> */}
           </div>
-          <div className="w-full">
+          <div className="w-full mt-[30px]">
             <SolidGreenButton width="100%" onClick={handleBookACall}>
               Book a call
             </SolidGreenButton>

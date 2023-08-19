@@ -11,7 +11,7 @@ const Hero = () => {
           className="w-full flex flex-col-reverse md:flex-row items-start gap-[50px] md:gap-[100px]
         p-4 md:px-[150px] py-5 md:py-[100px]">
           <div className="w-full md:w-2/5">
-            <h2 className="text-[28px] md:text-[48px] text-brandBlue font-montserrat font-bold mb-4 md:mb-[32px]">
+            <h2 className="text-[28px] md:text-[64px] text-brandBlue font-montserrat font-bold mb-4 md:mb-[32px]">
               Build yourself and your brand with Leadlift
             </h2>
             <p className="text-base md:text-[20px] text-brandBlue font-montserrat font-medium">

@@ -28,9 +28,11 @@ const Footer = () => {
                 className="font-outfit text-brandBlack text-base md:text-[18px] font-normal">
                 Privacy policy
               </Link>
-              <li className="font-outfit text-brandBlack text-base md:text-[18px] font-normal">
+              <Link
+                to="/#about"
+                className="font-outfit text-brandBlack text-base md:text-[18px] font-normal">
                 About Leadlift
-              </li>
+              </Link>
             </ul>
             <div className="flex-1"></div>
           </div>

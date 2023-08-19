@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PricingCard from "./PricingCard";
+import { Link } from "react-router-dom";
 
 const packages: any = [
   {
@@ -58,11 +59,11 @@ const Pricing = () => {
             Try Leadlift comprehensive suite of digital solutions
           </h2>
           <p className="mb-16 md:mb-20 font-normal font-openSans text-brandBlack text-[13px] md:text-base">
-            <a
-              href="#"
+            <Link
+              to="/book-a-call"
               className="underline decoration-brandBlue cursor-pointer mx-1">
               Book a call
-            </a>
+            </Link>
             now and experience the best solution for your business' social media
             platforms
           </p>

@@ -3,7 +3,9 @@ import { LeadLiftLogoIllustration } from "../../../Assets/Icons";
 
 const AboutLeadLift = () => {
   return (
-    <div className="w-full box-border bg-brandLightPurple px-[20px] md:px-0 py-[50px] md:py-[100px] relative overflow-hidden">
+    <div
+      className="w-full box-border bg-brandLightPurple px-[20px] md:px-0 py-[50px] md:py-[100px] relative overflow-hidden"
+      id="about">
       <div className="container mx-auto text-center flex flex-col items-center relative">
         <h2 className="mb-[20px] text-brandBlue font-montserrat text-[28px] md:text-[45px] font-bold  leading-[28px]">
           About{" "}
