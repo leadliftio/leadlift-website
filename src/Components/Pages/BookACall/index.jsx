@@ -17,6 +17,7 @@ import { SolidGreenButton } from "../../Buttons";
 
 import { InlineWidget } from "react-calendly";
 import { PopupButton } from "react-calendly";
+import { FaDivide } from "react-icons/fa6";
 
 const bookingForm = require("countrycitystatejson");
 
@@ -85,7 +86,7 @@ const BookACall = () => {
           </div>
           <div className="flex-1 w-full flex items-center">
             <div className="form-container w-full">
-              <form className="w-full bg-white p-[24px] md:p-10 rounded-[20px] shadow-card">
+              <form className="w-full bg-white px-[16px] py-[24px] md:p-10 rounded-[20px] shadow-card">
                 <div className="flex flex-col gap-[20px] md:gap-[32px] mb-[20px]">
                   <div className="w-full grid grid-cols-1  md:grid-cols-2 gap-4 md:gap-8 items-start">
                     <div>
@@ -112,18 +113,46 @@ const BookACall = () => {
                   </div>
                   <div className="w-full flex flex-row gap-4 md:gap-8 items-start">
                     <div className="w-1/3">
-                      <CustomInput
+                      {/* <CustomInput
                         name="country_code"
                         label="Country code"
                         placeholder="e.g +1"
-                      />
+                      /> */}
+                      <div>
+                        <div
+                          htmlFor={"phone number"}
+                          className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium w-1/2 md:w-full">
+                          Country code
+                        </div>
+                        <input
+                          name={"phone_number"}
+                          onChange={null}
+                          value={""}
+                          placeholder={"e.g +1"}
+                          className="w-full bg-white border-transparent border-b border-solid border-b-[#808080] rounded-[4px] px-4 py-3 text-[#23282B] font-montserrat text-base font-medium shadow-card placeholder:text-#999999 placeholder:font-montserrat  placeholder:font-normal "
+                        />
+                      </div>
                     </div>
                     <div className="w-2/3">
-                      <CustomInput
+                      {/* <CustomInput
                         name="phone_number"
                         label="Phone number"
                         placeholder="282948244"
-                      />
+                      /> */}
+                      <div>
+                        <div
+                          htmlFor={"phone number"}
+                          className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium w-1/2 md:w-full">
+                          Phone number
+                        </div>
+                        <input
+                          name={"phone_number"}
+                          onChange={null}
+                          value={""}
+                          placeholder={"282948244"}
+                          className="w-full bg-white border-transparent border-b border-solid border-b-[#808080] rounded-[4px] px-4 py-3 text-[#23282B] font-montserrat text-base font-medium shadow-card placeholder:text-#999999 placeholder:font-montserrat  placeholder:font-normal "
+                        />
+                      </div>
                     </div>
                   </div>
                   {/* Radio Section */}
@@ -236,6 +265,7 @@ const BookACall = () => {
                         cursor: "pointer",
                         color: "#50C878",
                       }}
+                      className="calendly_button"
                     />
                   </div>
                   <div className="w-full">
@@ -249,7 +279,7 @@ const BookACall = () => {
                     <SolidGreenButton width="100%">Proceed</SolidGreenButton>
                   </div>
                 </div>
-                <p className="foot-note text-textGray font-openSans text-[14px]">
+                <p className="foot-note text-textGray font-openSans text-[11px] md:text-[14px]">
                   Leadlift is committed to securing your privacy. By submitting
                   this form, you acknowledge Leadlift uses your information in
                   accordance with its Terms of use and Privacy policy.

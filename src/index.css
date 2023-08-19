@@ -100,3 +100,14 @@ select {
   top: 50% !important;
   transform: translateY(-50%) !important;
 }
+
+.calendly_button {
+  font-size: 16px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .calendly_button {
+    font-size: 13px !important;
+    text-align: start;
+  }
+}
