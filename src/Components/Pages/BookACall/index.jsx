@@ -142,7 +142,7 @@ const BookACall = () => {
                       <div>
                         <div
                           htmlFor={"phone number"}
-                          className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium max-[450px]:w-1/2 w-full">
+                          className="mb-[4px] text-[#23282B] font-montserrat text-[13px] md:text-base font-medium max-[450px]:w-1/3 w-full">
                           Phone number
                         </div>
                         <input
