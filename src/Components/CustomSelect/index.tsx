@@ -39,7 +39,8 @@ const CustomSelect = ({
         {optionsList.map((option: any, i) => (
           <option
             className="flex items-start gap-[10px] font-montserrat font-medium text-base"
-            key={i}>
+            key={i}
+            value={option.name}>
             <span className="mx-1">{option.emoji}</span>&nbsp;&nbsp;
             <span className="mx-1">{option.name}</span>
           </option>

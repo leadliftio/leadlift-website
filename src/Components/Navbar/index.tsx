@@ -111,7 +111,7 @@ const Navbar = () => {
               </SolidGreenButton>
             </div>
             <div
-              className="block md:hidden w-8 h-8 border border-solid border-[#D3D3D3] rounded-[4px]"
+              className="block lg:hidden w-8 h-8 border border-solid border-[#D3D3D3] rounded-[4px]"
               onClick={() => setOpen(!isOpen)}>
               {/* <Hamburger
                 toggled={isOpen}

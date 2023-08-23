@@ -3,7 +3,7 @@ import React from "react";
 type inputTypes = {
   label: string;
   name: string;
-  onChange?: () => void;
+  onChange?: any;
   value?: any;
   placeholder: string;
 };

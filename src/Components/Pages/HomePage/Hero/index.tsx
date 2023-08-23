@@ -6,7 +6,7 @@ import contentCrtn from "../../../Assets/Images/content_creation.png";
 import contentStrtgy from "../../../Assets/Images/content_strategy.png";
 import "animate.css";
 import { useSpring, animated } from "@react-spring/web";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HeroCards = ({ illustration, name, delay, speed }: any) => {
   const styles = useSpring({
@@ -17,10 +17,10 @@ const HeroCards = ({ illustration, name, delay, speed }: any) => {
     delay: delay,
   });
   return (
-    <div className="p-[8px] md:p-5 border border-solid border-[#D3D3D3] rounded-[8px] bg-white w-full md:w-[220px] text-center">
+    <div className="p-[8px] md:p-5 border border-solid border-[#D3D3D3] rounded-[8px] bg-white w-full md:w-[180px] text-center">
       <animated.div style={styles}>
         <img src={illustration} alt="" className="mb-[4px]" />
-        <p className="text-textGray font-openSans text-[10px] md:text-base">
+        <p className="text-textGray font-openSans text-[10px] md:text-[14px]">
           {name}
         </p>
       </animated.div>
@@ -30,6 +30,10 @@ const HeroCards = ({ illustration, name, delay, speed }: any) => {
 
 const Hero = () => {
   const navigate = useNavigate();
+
+  const handleBookACall = () => {
+    navigate("/book-a-call");
+  };
   const fadeUp = useSpring({
     from: { opacity: 0, transform: "translateY(30px)" }, // Starting opacity and translation
     to: { opacity: 1, transform: "translateY(0px)" }, // Ending opacity and translation
@@ -44,11 +48,11 @@ const Hero = () => {
   });
 
   return (
-    <div className="w-screen h-full md:h-[900px] bg-white relative container mx-auto">
+    <div className="w-screen h-full md:h-[calc(100vh-100px)] bg-white relative container mx-auto">
       <div className="w-full h-full text-center flex justify-center md:items-center mb-10">
         {/* <div className="container mx-auto"> */}
         <div className="flex flex-col md:justify-center items-center">
-          <div className="w-full md:w-[700px] mx-auto text-center px-[46px] pt-[24px] md:pt-0 pb-0 mt-0 md:mt-0">
+          <div className="w-full md:w-[700px] mx-auto text-center px-[46px] md:px-0 pt-[24px] md:pt-0 pb-0 mt-0 md:mt-0">
             <animated.h2
               className="font-montserrat text-[28px] md:text-[45px] font-bold text-brandBlue mb-[20px] leading-[normal]"
               style={fadeUp}>
@@ -56,13 +60,11 @@ const Hero = () => {
               <span className="text-brandGreen mx-1">Leadlift</span>{" "}
               comprehensive suite of digital solutions
             </animated.h2>
-            <animated.div style={fadeDown} className="z-50">
-              <SolidGreenButton
-                width="100%"
-                onClick={() => navigate("/book-a-call")}>
-                Book a call
-              </SolidGreenButton>
-            </animated.div>
+          </div>
+          <div className="w-full lg:w-[350px] px-[46px] md:px-0 ">
+            <SolidGreenButton width="100%" onClick={handleBookACall}>
+              Book a call
+            </SolidGreenButton>
           </div>
 
           <div className="grid grid-cols-3 gap-[25px] items-center p-[20px] mt-[36px] z-50 md:hidden">
@@ -102,12 +104,12 @@ const Hero = () => {
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[465px] h-[465px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[615px] h-[615px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       <div className="block md:hidden absolute left-[50%] top-[30%] translate-x-[-50%] translate-y-[-50%] w-[765px] h-[765px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1200px] h-[1200px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1500px] h-[1500px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
-      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1800px] h-[1800px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
+      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1000px] h-[1000px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
+      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1300px] h-[1300px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
+      <div className="hidden md:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[1600px] h-[1600px] rounded-full border-[1.265px] border-solid border-[#CECECE]" />
       {/* Floating Cards */}
       <div className="hidden md:block">
-        <div className="absolute top-36 left-0">
+        <div className="absolute top-[40px] left-0">
           <HeroCards
             illustration={socialMediaMarketing}
             name={"Social media management"}
@@ -115,7 +117,7 @@ const Hero = () => {
             delay={0}
           />
         </div>
-        <div className="absolute top-36 right-0">
+        <div className="absolute top-[40px] right-0">
           <HeroCards
             illustration={communityMngmt}
             name={"Community management"}

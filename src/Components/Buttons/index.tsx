@@ -1,11 +1,14 @@
 import React from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { CircleSpinner } from "react-spinners-kit";
 
 type buttonTypes = {
   width: string;
   children: any;
   disabled?: boolean;
+  loading?: boolean;
   onClick?: () => void;
+  type?: any;
 };
 
 export const SolidGreenButton = ({
@@ -13,14 +16,17 @@ export const SolidGreenButton = ({
   disabled,
   children,
   width,
+  loading,
+  type,
 }: buttonTypes) => {
   return (
     <button
-      className={`py-[12px] rounded-[8px] bg-brandGreen flex items-center justify-center gap-[10px] text-center text-white text-base font-poppins font-semibold border-none cursor-pointer`}
+      className={`py-[12px] rounded-[8px] bg-brandGreen flex items-center justify-center gap-[10px] text-center text-white text-base font-poppins font-semibold border-none cursor-pointer z-50`}
       disabled={disabled}
+      type={type}
       onClick={onClick}
       style={{ width: width }}>
-      {children}
+      {!loading ? children : <CircleSpinner />}
     </button>
   );
 };

@@ -7,6 +7,7 @@ import {
 } from "../../../Assets/Icons";
 import trainingImage from "../../../Assets/Images/training_section_img.jpeg";
 import action_frame from "../../../Assets/Images/action_frame.png";
+import TrainingPopup from "../../../TrainingForm";
 
 const trainingPerks = [
   {
@@ -32,14 +33,15 @@ const trainingPerks = [
 ];
 
 const FreeTrainingSection = () => {
+  const [open, setOpen] = React.useState(false);
   return (
     <div className="container mx-auto">
-      <div className="w-full px-[16px] md:px-[150px] py-[64px] md:py-[100px] flex flex-col md:flex-row gap-[120px] bg-white">
+      <div className="w-full px-[16px] lg:px-[150px] py-[64px] lg:py-[100px] flex flex-col lg:flex-row gap-[120px] bg-white">
         <div className="section-content flex-1">
-          <div className="section-title text-brandBlue font-montserrat font-semibold text-[20px] mb-[10px] md:mb-[20px]">
+          <div className="section-title text-brandBlue font-montserrat font-semibold text-[20px] mb-[10px] lg:mb-[20px]">
             Free On-Demand Training:
           </div>
-          <div className="section-header text-brandBlue font-montserrat font-semibold text-[28px] md:text-[32px] mb-[10px]">
+          <div className="section-header text-brandBlue font-montserrat font-semibold text-[28px] lg:text-[32px] mb-[10px]">
             How to Build a Personal Brand on Social Media
           </div>
           <p className="font-openSans text-base text-brandBlue leading-[28px] mb-[40px]">
@@ -64,15 +66,15 @@ const FreeTrainingSection = () => {
               ))}
             </ul>
           </div>
-          <SolidGreenButton width="100%">
+          <SolidGreenButton width="100%" onClick={() => setOpen(!open)}>
             Sign up for the training
           </SolidGreenButton>
         </div>
         <div className="section-graphics flex-1">
           <div className="container w-full h-full flex items-center justify-center">
-            <div className="relative w-full h-[250px] md:h-full">
-              <div className="blob-bg w-[234px] h-[284px] md:w-[375px] md:h-[456px] flex-shrink-0 bg-brandLightPurple rounded-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
-              <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[302px] h-[196px] md:w-[489px] md:h-[296px]">
+            <div className="relative w-full h-[250px] lg:h-full">
+              <div className="blob-bg w-[234px] h-[284px] lg:w-[375px] lg:h-[456px] flex-shrink-0 bg-brandLightPurple rounded-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+              <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[302px] h-[196px] lg:w-[489px] lg:h-[296px]">
                 <img
                   src={trainingImage}
                   alt=""
@@ -81,7 +83,7 @@ const FreeTrainingSection = () => {
                 <img
                   src={action_frame}
                   alt=""
-                  className="mx-auto mt-[-30px] md:mt-[-50px] px-2"
+                  className="mx-auto mt-[-30px] lg:mt-[-50px] px-2"
                 />
                 <div className="absolute bottom-[-20px] left-[-28px]">
                   <GreenDotsGroup />
@@ -94,6 +96,7 @@ const FreeTrainingSection = () => {
           </div>
         </div>
       </div>
+      <TrainingPopup open={open} handleClose={() => setOpen(false)} />
     </div>
   );
 };
