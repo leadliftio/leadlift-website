@@ -3,7 +3,7 @@ import cta_image from "../../Assets/Images/cta.png";
 
 export const TextPill = ({ children }: any) => {
   return (
-    <div className="p-[8px] md:p-[10px] bg-white text-black text-[14px] md:text-base font-semibold font-openSans rounded-[16px] md:rounded-[20px] shadow-card">
+    <div className="p-[8px] md:p-[10px] bg-white text-black text-[12px] md:text-base font-semibold font-openSans rounded-[16px] md:rounded-[20px] shadow-card">
       {children}
     </div>
   );
@@ -14,14 +14,7 @@ const ServicesCta = () => {
     <div className="w-full h-full md:h-[850px] bg-[#CCCCE5]">
       <div className="container mx-auto w-full h-full flex justify-center items-center relative py-[50px] px-[16px] md:px-0">
         <div className="">
-          <div className="">
-            <img
-              src={cta_image}
-              alt=""
-              className="w-full h-auto md:w-[669px] md:h-[496px]"
-            />
-          </div>
-          <div className="flex items-center flex-wrap gap-3 mt-[50px] md:mt-0">
+          <div className="flex items-center flex-wrap justify-centr gap-3 mb-[50px] md:mb-0">
             <div className="relative md:absolute md:top-[100px] md:left-[16%]">
               <TextPill>Personalized Approach</TextPill>
             </div>
@@ -34,6 +27,15 @@ const ServicesCta = () => {
             <div className="relative md:absolute md:bottom-[100px] md:left-[25%]">
               <TextPill>Higher Search Ranking</TextPill>
             </div>
+          </div>
+          <div className="">
+            <img
+              src={cta_image}
+              alt=""
+              className="w-full h-auto md:w-[669px] md:h-[496px]"
+            />
+          </div>
+          <div className="flex items-center flex-wrap gap-3 mt-[50px] md:mt-0">
             <div className="relative md:absolute md:bottom-[100px] md:right-[25%]">
               <TextPill>Cutting-edge Technology</TextPill>
             </div>
