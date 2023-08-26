@@ -133,7 +133,7 @@ const Navbar = () => {
       {/* <div className="w-screen h-screen overflow-hidden"> */}
       <div
         className={`w-full bg-[#EDF0F8] h-[550px] rounded-[25px] px-[16px] py-[24px] fixed z-[8080] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
-          isOpen ? "translate-y-[0]" : "translate-y-[-550px]"
+          isOpen ? "translate-y-[0]" : "translate-y-[-550px] z-[9999]"
         }`}
         ref={mobileNavRef}>
         <div className="h-[90%] pt-[65px] pb-[16px] flex flex-col justify-between relative z-50">
