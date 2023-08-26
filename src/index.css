@@ -96,10 +96,6 @@ select {
 .calendly-popup {
   padding: 16px;
 }
-.calendly-overlay .calendly-popup {
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-}
 
 .calendly_button {
   font-size: 16px !important;
@@ -109,5 +105,9 @@ select {
   .calendly_button {
     font-size: 13px !important;
     text-align: start;
+  }
+  .calendly-overlay .calendly-popup {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
   }
 }

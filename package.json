@@ -18,6 +18,7 @@
     "axios": "^1.4.0",
     "buttercms": "^1.2.12",
     "countrycitystatejson": "^21.3.2702",
+    "cross-env": "^7.0.3",
     "formik": "^2.4.3",
     "hamburger-react": "^2.5.0",
     "headlessui": "^0.0.0",

@@ -99,11 +99,11 @@ const Navbar = () => {
                 className="text-brandBlack font-normal font-openSans text-[20px]">
                 Pricing
               </Link>
-              <Link
+              {/* <Link
                 to="/blog"
                 className="text-brandBlack font-normal font-openSans text-[20px]">
                 Blog
-              </Link>
+              </Link> */}
             </div>
             <div className="hidden lg:flex">
               <SolidGreenButton width="200px" onClick={handleBookACall}>
