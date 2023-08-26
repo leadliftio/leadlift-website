@@ -21,6 +21,7 @@ const trainingFormSchema = Yup.object().shape({
 export default function TrainingPopup({ open, handleClose }: any) {
   const [successOpen, setSuccessOpen] = useState(false);
   const cancelButtonRef = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   const freeTrainingRequest = useMutation({
     mutationFn: postGetresponseRequest,
@@ -43,7 +44,29 @@ export default function TrainingPopup({ open, handleClose }: any) {
     validationSchema: trainingFormSchema,
     onSubmit: (values) => {
       console.log(values);
-      freeTrainingRequest.mutate(values);
+      setLoading(true);
+      // freeTrainingRequest.mutate(values);
+      const formData = new FormData();
+      Object.entries(values).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+      fetch("https://formkeep.com/f/72c02fe18be8", {
+        method: "POST",
+        body: formData,
+      })
+        .then(() => {
+          setLoading(false);
+          handleClose();
+          setSuccessOpen(true);
+        })
+        .catch((err) => {
+          setLoading(false);
+          toast.error(
+            err?.message ||
+              err?.response.message ||
+              "Something went wrong, please try again"
+          );
+        });
     },
   });
 
@@ -143,7 +166,7 @@ export default function TrainingPopup({ open, handleClose }: any) {
                       width="100%"
                       //   onClick={handleSubmit}
                       type={"submit"}
-                      loading={freeTrainingRequest.isLoading}>
+                      loading={loading}>
                       Proceed
                     </SolidGreenButton>
                   </form>

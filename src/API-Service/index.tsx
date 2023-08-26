@@ -1,19 +1,25 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://api.getresponse.com/v3",
+  baseURL: "https://getform.io/f",
   headers: {
-    "X-Auth-Token": "api-key 2ut5pg0kk3zs6v8851012zvl174nkmzb",
+    // "X-Auth-Token": "api-key 2ut5pg0kk3zs6v8851012zvl174nkmzb",
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
   },
-  withCredentials: false,
 });
 
 export const postGetresponseRequest = async (data: any) => {
-  const { data: response } = await instance.post(
-    `/${process.env.REACT_APP_TENANT_ID}/v1/Transactions/${data.paymentGatewayReferenceNumber}/verifications`,
-    data
+  const response = await fetch(
+    "https://getform.io/f/2bf58eab-5d0c-41ed-bb45-b586dfe9b0c1",
+    {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    }
   );
-  return response;
+  console.log(response);
+  // return response;
 };

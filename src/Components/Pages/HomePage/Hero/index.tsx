@@ -61,7 +61,7 @@ const Hero = () => {
               comprehensive suite of digital solutions
             </animated.h2>
           </div>
-          <div className="w-full lg:w-[350px] px-[46px] md:px-0 ">
+          <div className="w-full lg:w-[350px] px-[46px] md:px-0 z-[9999]">
             <SolidGreenButton width="100%" onClick={handleBookACall}>
               Book a call
             </SolidGreenButton>

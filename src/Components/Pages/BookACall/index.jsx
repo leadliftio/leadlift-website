@@ -67,6 +67,7 @@ const BookACall = () => {
   const [countriesList, setCountriesList] = useState([]);
   const [personType, setPersonType] = useState("");
   const [successOpen, setSuccessOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setCountriesList(bookingForm.getCountries());
@@ -99,7 +100,28 @@ const BookACall = () => {
     validationSchema: demoFormSchema,
     onSubmit: (values) => {
       console.log(values);
-      demoRequest.mutate(values);
+      setLoading(true);
+      // freeTrainingRequest.mutate(values);
+      const formData = new FormData();
+      Object.entries(values).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+      fetch("https://formkeep.com/f/5ba8a77b857c", {
+        method: "POST",
+        body: formData,
+      })
+        .then(() => {
+          setLoading(false);
+          setSuccessOpen(true);
+        })
+        .catch((err) => {
+          setLoading(false);
+          toast.error(
+            err?.message ||
+              err?.response.message ||
+              "Something went wrong, please try again"
+          );
+        });
     },
   });
 
@@ -379,7 +401,7 @@ const BookACall = () => {
                     <SolidGreenButton
                       width="100%"
                       type={"submit"}
-                      loading={demoRequest.isLoading}>
+                      loading={loading}>
                       Proceed
                     </SolidGreenButton>
                   </div>
