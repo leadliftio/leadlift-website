@@ -3,7 +3,7 @@ import cta_image from "../../Assets/Images/cta.png";
 
 export const TextPill = ({ children }: any) => {
   return (
-    <div className="p-[8px] md:p-[10px] bg-white text-black text-[12px] md:text-base font-semibold font-openSans rounded-[16px] md:rounded-[20px] shadow-card">
+    <div className="p-[8px] md:p-[10px] bg-white text-black text-[11px] md:text-base font-semibold font-openSans rounded-[16px] md:rounded-[20px] shadow-card">
       {children}
     </div>
   );
