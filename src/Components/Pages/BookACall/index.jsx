@@ -1,31 +1,32 @@
-import React, { useState, useEffect } from "react";
+import { useMutation } from "@tanstack/react-query";
+import { useFormik } from "formik";
+import React, { useEffect, useState } from "react";
+import { InlineWidget } from "react-calendly";
+import { PopupButton } from "react-calendly";
+import {
+  CountrySelect,
+  GetCity,
+  GetCountries,
+  GetLanguages,
+  GetState,
+} from "react-country-state-city";
+import toast from "react-hot-toast";
+import { FaDivide } from "react-icons/fa6";
+import { CircleSpinner } from "react-spinners-kit";
+import * as Yup from "yup";
+
+import { postGetresponseRequest } from "../../../API-Service";
 import {
   BlueDotsGroup,
   CallBookingSuccessIcon,
   GreenDotsGroup,
   RoundedCheckMarkIcon,
 } from "../../Assets/Icons";
-import CustomInput, { CustomMultiLineInput } from "../../CustomInput";
-import {
-  GetCountries,
-  GetState,
-  GetCity,
-  GetLanguages, //async functions
-  CountrySelect,
-} from "react-country-state-city";
-import CustomSelect from "../../CustomSelect";
+import getInTouchImage from "../../Assets/Images/Get in touch-amico 1.svg";
 import { SolidGreenButton } from "../../Buttons";
-
-import { InlineWidget } from "react-calendly";
-import { PopupButton } from "react-calendly";
-import { FaDivide } from "react-icons/fa6";
-import { CircleSpinner } from "react-spinners-kit";
-import { useMutation } from "@tanstack/react-query";
-import { postGetresponseRequest } from "../../../API-Service";
-import toast from "react-hot-toast";
+import CustomInput, { CustomMultiLineInput } from "../../CustomInput";
+import CustomSelect from "../../CustomSelect";
 import SuccessPopup from "../../SuccessPopup";
-import { useFormik } from "formik";
-import * as Yup from "yup";
 
 const bookingForm = require("countrycitystatejson");
 
@@ -129,7 +130,7 @@ const BookACall = () => {
     <div className="w-screen box-border bg-brandLightPurple">
       <div className="container mx-auto">
         <div className="py-[24px] px-[16px] md:py-[50px] md:pl-[150px] md:pr-[100px] flex flex-col gap-[50px] md:gap-0 md:flex-row items-start">
-          <div className="w-full pr-0 md:pr-[120px] flex-1">
+          <div className="w-full pr-0 md:pr-[120px] flex-[0.75]">
             <h2 className="text-[#23282B] font-montserrat font-bold  text-[32px] md:text-[40px] mb-[30px] md:mb-[65px]">
               Book a call
             </h2>
@@ -143,7 +144,7 @@ const BookACall = () => {
               <h6 className="text-[#23282B] font-montserrat font-bold  text-[20px] mb-[19px]">
                 What to expect?
               </h6>
-              <ul className="flex flex-col gap-[10px] md:gap-[20px]">
+              <ul className="flex flex-col gap-[10px] md:gap-[20px] mb-[24px] lg:mb-[50px]">
                 {features.map((item, i) => (
                   <li className="flex items-center gap-1" key={item.id}>
                     <div className="">
@@ -155,11 +156,34 @@ const BookACall = () => {
                   </li>
                 ))}
               </ul>
+              <div>
+                <PopupButton
+                  url="https://calendly.com/subscription-j3m/discovery-call-leadlift"
+                  rootElement={document.getElementById("root")}
+                  text="Proceed"
+                  styles={{
+                    fontWeight: 600,
+                    fontFamily: "Poppins",
+                    fontSize: "16px",
+                    cursor: "pointer",
+                    color: "#fff",
+                    width: "100%",
+                    height: "56px",
+                    background: "#50CE78",
+                    borderRadius: "8px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  className="calendly_button"
+                />
+              </div>
             </div>
           </div>
           <div className="flex-1 w-full flex items-center">
             <div className="form-container w-full">
-              <form
+              <img src={getInTouchImage} alt="" />
+              {/* <form
                 onSubmit={formik.handleSubmit}
                 className="w-full bg-white px-[16px] py-[24px] md:p-10 rounded-[20px] shadow-card">
                 <div className="flex flex-col gap-[20px] md:gap-[32px] mb-[20px]">
@@ -252,7 +276,6 @@ const BookACall = () => {
                       </div>
                     </div>
                   </div>
-                  {/* Radio Section */}
                   <div className="w-full flex flex-col gap-[10px]">
                     <label
                       htmlFor={"radio"}
@@ -366,16 +389,11 @@ const BookACall = () => {
                       </div>
                     ) : null}
                   </div>
-                  {/* <div className="text-brandGreen no-underline font-medium font-montserrat text-[13px] md:text-base cursor-pointer">
-                    Click to Schedule an Appointment
-                  </div> */}
+
                   <div>
                     <PopupButton
                       url="https://calendly.com/subscription-j3m/discovery-call-leadlift"
-                      /*
-                       * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                       * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                       */
+                   
                       rootElement={document.getElementById("root")}
                       text="Touch to Schedule an Appointment"
                       styles={{
@@ -411,7 +429,7 @@ const BookACall = () => {
                   this form, you acknowledge Leadlift uses your information in
                   accordance with its Terms of use and Privacy policy.
                 </p>
-              </form>
+              </form> */}
               {/* <InlineWidget url="https://calendly.com/leadliftio" /> */}
             </div>
           </div>

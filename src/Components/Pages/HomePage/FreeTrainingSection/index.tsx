@@ -1,12 +1,13 @@
 import React from "react";
-import { SolidGreenButton } from "../../../Buttons";
+
 import {
   BlueDotsGroup,
   GreenDotsGroup,
   RoundedCheckMarkIcon,
 } from "../../../Assets/Icons";
-import trainingImage from "../../../Assets/Images/training_section_img.jpeg";
 import action_frame from "../../../Assets/Images/action_frame.png";
+import trainingImage from "../../../Assets/Images/unsplash_1-aA2Fadydc.png";
+import { SolidGreenButton } from "../../../Buttons";
 import TrainingPopup from "../../../TrainingForm";
 
 const trainingPerks = [
