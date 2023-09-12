@@ -8,7 +8,7 @@ const BookACallPage = () => {
   return (
     <>
       <Navbar />
-      <div className="pt-[75px]">
+      <div className="pt-[64px]">
         <BookACall />
       </div>
       <Footer />

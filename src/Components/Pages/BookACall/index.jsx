@@ -128,62 +128,65 @@ const BookACall = () => {
 
   return (
     <div className="w-screen box-border bg-brandLightPurple">
-      <div className="container mx-auto">
-        <div className="py-[24px] px-[16px] md:py-[50px] md:pl-[150px] md:pr-[100px] flex flex-col gap-[50px] md:gap-0 md:flex-row items-start">
-          <div className="w-full pr-0 md:pr-[120px] flex-[0.75]">
-            <h2 className="text-[#23282B] font-montserrat font-bold  text-[32px] md:text-[40px] mb-[30px] md:mb-[65px]">
-              Book a call
-            </h2>
-            <p className="text-[#23282B] font-openSans font-normal  text-[14px] md:text-base mb-[40px] md:mb-[65px]">
-              Congratulation on taking the step to book a call with us! During
-              this call, we will show you how our comprehensive suite of digital
-              solution can be tailored to meet your social media goal while
-              elevating your presence and brand.
-            </p>
-            <div>
-              <h6 className="text-[#23282B] font-montserrat font-bold  text-[20px] mb-[19px]">
-                What to expect?
-              </h6>
-              <ul className="flex flex-col gap-[10px] md:gap-[20px] mb-[24px] lg:mb-[50px]">
-                {features.map((item, i) => (
-                  <li className="flex items-center gap-1" key={item.id}>
-                    <div className="">
-                      <RoundedCheckMarkIcon />
-                    </div>
-                    <p className="font-openSans text-[13px] md:text-base text-[#23282B]">
-                      {item.perk}
-                    </p>
-                  </li>
-                ))}
-              </ul>
+      <div
+        className="
+      py-[40px] px-[16px] md:py-[50px] mdpl-[150px] mdpr-[100px] ">
+        <div className="container max-w-[1200px] mx-auto">
+          <div className="flex flex-col gap-0 md:gap-0 md:flex-row items-start">
+            <div className="w-full pr-0 md:pr-[120px] flex-[0.75]">
+              <h2 className="text-[#23282B] font-montserrat font-bold text-[40px] mb-[20px] md:mb-[65px] leading-[normal]">
+                Book a call
+              </h2>
+              <p className="text-[#23282B] font-openSans font-normal text-base mb-[20px] md:mb-[65px] leading-[normal]">
+                Congratulation on taking the step to book call with us! During
+                this call, we will show you how our comprehensive suite of
+                digital solution can be tailored to meet your social media goal
+                while elevating your presence and brand.
+              </p>
               <div>
-                <PopupButton
-                  url="https://calendly.com/subscription-j3m/discovery-call-leadlift"
-                  rootElement={document.getElementById("root")}
-                  text="Proceed"
-                  styles={{
-                    fontWeight: 600,
-                    fontFamily: "Poppins",
-                    fontSize: "16px",
-                    cursor: "pointer",
-                    color: "#fff",
-                    width: "100%",
-                    height: "56px",
-                    background: "#50CE78",
-                    borderRadius: "8px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                  className="calendly_button"
-                />
+                <h6 className="text-[#23282B] font-montserrat font-bold  text-[20px] mb-[19px]">
+                  What to expect?
+                </h6>
+                <ul className="flex flex-col gap-[12px] md:gap-[20px] mb-[30px] lg:mb-[50px]">
+                  {features.map((item, i) => (
+                    <li className="flex items-start gap-1" key={item.id}>
+                      <div className="">
+                        <RoundedCheckMarkIcon />
+                      </div>
+                      <p className="font-openSans font-normal leading-[normal] tracking-[0.08px] text-base text-[#23282B]">
+                        {item.perk}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+                <div className="my-[30px]">
+                  <PopupButton
+                    url="https://calendly.com/subscription-j3m/discovery-call-leadlift"
+                    rootElement={document.getElementById("root")}
+                    text="Proceed"
+                    styles={{
+                      fontWeight: 600,
+                      fontFamily: "Poppins",
+                      fontSize: "16px",
+                      cursor: "pointer",
+                      color: "#fff",
+                      width: "100%",
+                      height: "56px",
+                      background: "#50CE78",
+                      borderRadius: "8px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    className="calendly_button"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex-1 w-full flex items-center">
-            <div className="form-container w-full">
-              <img src={getInTouchImage} alt="" />
-              {/* <form
+            <div className="flex-1 w-full flex items-center">
+              <div className="form-container w-full">
+                <img src={getInTouchImage} alt="" />
+                {/* <form
                 onSubmit={formik.handleSubmit}
                 className="w-full bg-white px-[16px] py-[24px] md:p-10 rounded-[20px] shadow-card">
                 <div className="flex flex-col gap-[20px] md:gap-[32px] mb-[20px]">
@@ -430,7 +433,8 @@ const BookACall = () => {
                   accordance with its Terms of use and Privacy policy.
                 </p>
               </form> */}
-              {/* <InlineWidget url="https://calendly.com/leadliftio" /> */}
+                {/* <InlineWidget url="https://calendly.com/leadliftio" /> */}
+              </div>
             </div>
           </div>
         </div>

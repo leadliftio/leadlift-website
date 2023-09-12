@@ -1,18 +1,18 @@
+import { Squash as Hamburger } from "hamburger-react";
 import React from "react";
-import { Link, Router, useNavigate } from "react-router-dom";
-import brandLogo from "../Assets/Images/brandLogo.svg";
-import { SolidGreenButton } from "../Buttons";
-import { CustomDropdownIcon } from "../Assets/Icons";
 import {
-  FaLinkedinIn,
-  FaTwitter,
   FaFacebookF,
   FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
 } from "react-icons/fa6";
+import { Link, Router, useNavigate } from "react-router-dom";
 
-import { Squash as Hamburger } from "hamburger-react";
-import MenuIcon from "../Assets/Images/menu@2x.svg";
+import { CustomDropdownIcon } from "../Assets/Icons";
+import brandLogo from "../Assets/Images/brandLogo.svg";
 import CloseMenu from "../Assets/Images/Close_MD.svg";
+import MenuIcon from "../Assets/Images/menu@2x.svg";
+import { SolidGreenButton } from "../Buttons";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -57,8 +57,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px-[150px] fixed z-[9999] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
-        <div className="container mx-auto">
+      <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px-[150px] fixed z-[8500] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
+        <div className="container max-w-[1200px] mx-auto">
           <div className="w-full flex items-center justify-between">
             <Link to={"/"} className="">
               <img src={brandLogo} alt="LeadLift" className="h-[32px]" />
@@ -133,7 +133,7 @@ const Navbar = () => {
       {/* <div className="w-screen h-screen overflow-hidden"> */}
       <div
         className={`w-full bg-[#EDF0F8] h-[550px] rounded-[25px] px-[16px] py-[24px] fixed z-[8080] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
-          isOpen ? "translate-y-[0]" : "translate-y-[-550px] z-[9999]"
+          isOpen ? "translate-y-[0]" : "translate-y-[-550px] z-[8500]"
         }`}
         ref={mobileNavRef}>
         <div className="h-[90%] pt-[65px] pb-[16px] flex flex-col justify-between relative z-50">

@@ -5,7 +5,7 @@ import jobfactor from "../../../Assets/Images/jobFactor.png";
 const TrustedPartners = () => {
   return (
     <div className="w-screen bg-[#CCCCE5] h-full py-[20px] md:py-[50px] px-[16px] md:px-[210px] relative">
-      <div className="container mx-auto">
+      <div className="container max-w-[1200px] mx-auto">
         <div className="hidden md:flex w-full h-full items-center justify-between">
           <h6 className="text-[36px] text-brandBlue font-montserrat font-semibold">
             Trusted by:

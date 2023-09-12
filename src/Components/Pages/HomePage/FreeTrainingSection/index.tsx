@@ -37,8 +37,8 @@ const FreeTrainingSection = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <div className="w-screen bg-[#EFEFFC] mt-[24px] lg:mt-[50px]">
-      <div className="container mx-auto">
-        <div className="w-full px-[16px] lg:px-[150px] py-[64px] lg:py-[75px] flex flex-col lg:flex-row  gap-[60px] lg:gap-[120px]">
+      <div className="container max-w-[1200px] mx-auto">
+        <div className="w-full px-[16px] lg:px[150px] py-[64px] lg:py-[75px] flex flex-col lg:flex-row  gap-[60px] lg:gap-[120px]">
           <div className="section-content flex-1">
             <div className="section-title text-brandBlue font-montserrat font-semibold text-[20px] mb-[10px] lg:mb-[20px]">
               Free On-Demand Training:
@@ -57,7 +57,7 @@ const FreeTrainingSection = () => {
               </h6>
               <ul className="flex flex-col gap-[14px]">
                 {trainingPerks.map((item, i) => (
-                  <li className="flex items-center gap-1" key={item.id}>
+                  <li className="flex items-start gap-1" key={item.id}>
                     <div>
                       <RoundedCheckMarkIcon />
                     </div>
@@ -76,21 +76,17 @@ const FreeTrainingSection = () => {
             <div className="container w-full h-full flex items-center justify-center">
               <div className="relative w-full h-[250px] lg:h-full">
                 <div className="blob-bg w-[234px] h-[284px] lg:w-[375px] lg:h-[456px] flex-shrink-0 bg-brandLightPurple rounded-[20px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
-                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[302px] h-[196px] lg:w-[489px] lg:h-[296px]">
+                <div className="absolute top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[312px] h-[222px] lg:w-[500px] lg:h-[296px]">
                   <img
                     src={trainingImage}
                     alt=""
                     className="rounded-[8px] w-full"
                   />
-                  <img
-                    src={action_frame}
-                    alt=""
-                    className="mx-auto mt-[-30px] lg:mt-[-50px] px-2"
-                  />
-                  <div className="absolute bottom-[-20px] left-[-28px]">
+
+                  <div className="absolute bottom-[-70px] left-[0px] hidden md:block">
                     <GreenDotsGroup />
                   </div>
-                  <div className="absolute top-[0px] right-[-30px]">
+                  <div className="absolute top-[16px] right-[-5px] hidden md:block">
                     <BlueDotsGroup />
                   </div>
                 </div>

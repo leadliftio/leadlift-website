@@ -1,14 +1,15 @@
-import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { SolidGreenButton } from "../Buttons";
-import { CloseIcon, SignedUpSuccessIcon } from "../Assets/Icons";
-import CustomInput from "../CustomInput";
 import { useMutation } from "@tanstack/react-query";
-import { postGetresponseRequest } from "../../API-Service";
-import toast from "react-hot-toast";
-import SuccessPopup from "../SuccessPopup";
 import { useFormik } from "formik";
+import { Fragment, useRef, useState } from "react";
+import toast from "react-hot-toast";
 import * as Yup from "yup";
+
+import { postGetresponseRequest } from "../../API-Service";
+import { CloseIcon, SignedUpSuccessIcon } from "../Assets/Icons";
+import { SolidGreenButton } from "../Buttons";
+import CustomInput from "../CustomInput";
+import SuccessPopup from "../SuccessPopup";
 
 const trainingFormSchema = Yup.object().shape({
   firstName: Yup.string().min(2).required("First name is required"),
@@ -75,7 +76,7 @@ export default function TrainingPopup({ open, handleClose }: any) {
       <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"
-          className="relative z-[7500]"
+          className="relative z-[9000]"
           initialFocus={cancelButtonRef}
           onClose={handleClose}>
           <Transition.Child
