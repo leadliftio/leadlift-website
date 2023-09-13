@@ -107,9 +107,9 @@ export default function TrainingPopup({ open, handleClose }: any) {
                         Sign up for a free on-demand training
                       </h6>
                       <p className="font-openSans font-light text-base leading-[normal] text-[#808080]">
-                        Enter your name and email below and get access to the
-                        on-demand training. Start building your personal brand
-                        today!
+                        Enter your name and email address below and get the
+                        on-demand training video sent to you. Start building
+                        your brand today!
                       </p>
                     </div>
                     <div onClick={handleClose} className="cursor-pointer">
