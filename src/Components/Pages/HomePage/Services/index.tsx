@@ -1,14 +1,8 @@
 import React from "react";
-import gradientLogo from "../../../Assets/Images/gradientLogo.png";
-import gradientIllustration from "../../../Assets/Images/gradientIllustration_2.png";
 
-import {
-  ArchiveIcon,
-  CommandIcon,
-  DocumentFilterIcon,
-  OutlineLogo,
-  WalletIcon,
-} from "../../../Assets/Icons";
+import { ArchiveIcon, CommandIcon, DocumentFilterIcon, OutlineLogo, WalletIcon } from "../../../Assets/Icons";
+import gradientIllustration from "../../../Assets/Images/gradientIllustration_2.png";
+import gradientLogo from "../../../Assets/Images/gradientLogo.png";
 import person1 from "../../../Assets/Images/person1_1.png";
 import person2 from "../../../Assets/Images/person2.png";
 import ServiceCard from "./ServiceCard";
@@ -16,7 +10,7 @@ import ServiceCard from "./ServiceCard";
 const OurServices = () => {
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="container max-w-[1200px] mx-auto">
         <div className="w-full bg-white z-[1000] relative">
           <div className="pt-[20px] pb-[16px] lg:py-[40px] mx-auto flex justify-center">
             <p className="font-montserrat font-bold text-brandBlue text-[28px] lg:text-[45px]">

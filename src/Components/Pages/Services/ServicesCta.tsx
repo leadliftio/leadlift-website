@@ -1,4 +1,5 @@
 import React from "react";
+
 import cta_image from "../../Assets/Images/cta.png";
 
 export const TextPill = ({ children }: any) => {
@@ -12,7 +13,7 @@ export const TextPill = ({ children }: any) => {
 const ServicesCta = () => {
   return (
     <div className="w-full h-full lg:h-[850px] bg-[#CCCCE5]">
-      <div className="container mx-auto w-full h-full flex justify-center items-center relative py-[50px] px-[16px] lg:px-0">
+      <div className="container max-w-[1200px] mx-auto w-full h-full flex justify-center items-center relative py-[50px] px-[16px] lg:px-0">
         <div className="">
           <div className="flex items-center flex-wrap justify-between gap-4 mb-[20px] lg:mb-0">
             <div className="relative lg:absolute lg:top-[100px] lg:left-[16%]">
@@ -23,7 +24,7 @@ const ServicesCta = () => {
             </div>
           </div>{" "}
           <div className="flex items-center flex-wrap justify-between gap-4 mb-[50px] lg:mb-0">
-            <div className="relative lg:absolute lg:bottom-[214px] lg:left-[150px]">
+            <div className="relative lg:absolute lg:bottom-[214px] lg:left-[0px]">
               <TextPill>Transparent Reporting</TextPill>
             </div>
             <div className="relative lg:absolute lg:bottom-[100px] lg:left-[25%]">
@@ -47,7 +48,7 @@ const ServicesCta = () => {
             </div>
           </div>
           <div className="flex items-center justify-between flex-wrap gap-3 mt-[20px] lg:mt-0">
-            <div className="relative lg:absolute lg:bottom-[235px] lg:right-[234px]">
+            <div className="relative lg:absolute lg:bottom-[235px] lg:right-[0px]">
               <TextPill>Save Time</TextPill>
             </div>
             <div className="relative lg:absolute lg:bottom-[50%] lg:left-[217px]">
