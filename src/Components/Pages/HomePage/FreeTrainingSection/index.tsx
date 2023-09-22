@@ -38,7 +38,7 @@ const FreeTrainingSection = () => {
   return (
     <div className="w-screen bg-[#EFEFFC] mt-[24px] lg:mt-[50px]">
       <div className="container max-w-[1200px] mx-auto">
-        <div className="w-full px-[16px] lg:px[150px] py-[64px] lg:py-[75px] flex flex-col lg:flex-row  gap-[60px] lg:gap-[120px]">
+        <div className="w-full px-[16px] lg:px-0 py-[64px] lg:py-[75px] flex flex-col lg:flex-row  gap-[60px] lg:gap-[120px]">
           <div className="section-content flex-1">
             <div className="section-title text-brandBlue font-montserrat font-semibold text-[20px] mb-[10px] lg:mb-[20px]">
               Free On-Demand Training:

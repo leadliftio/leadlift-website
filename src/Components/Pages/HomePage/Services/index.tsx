@@ -17,7 +17,7 @@ const OurServices = () => {
               Our Services
             </p>
           </div>
-          <div className="px-4 lg:px-[50px] mb-[32px] w-full h-full lg:h-[1000px] box-border">
+          <div className="px-4 lg:px-[0] mb-[32px] w-full h-full lg:h-[1000px] box-border">
             <div className="rounded-[8px] bg-[#fafafa] h-full w-full bg-services1 bg-no-repeat bg-cover bg-center p-[20px] py-[30px] lg:py-0">
               <div className="relative w-full h-full">
                 <div className="absolute bottom-[-28px] left-[-18px] w-0 h-0 border-solid border-l-0 border-l-transparent border-r-[150px] lg:border-r-[400px] border-r-transparent border-b-[150px] lg:border-b-[400px] border-b-white rounded-bl-[8px]"></div>
@@ -73,7 +73,7 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-          <div className="px-4 lg:px-[50px] mb-[32px] w-full h-full lg:h-[1000px] box-border">
+          <div className="px-4 lg:px-[0] mb-[32px] w-full h-full lg:h-[1000px] box-border">
             <div className="rounded-[8px] bg-[#fafafa] h-full w-full bg-services2 bg-no-repeat bg-cover bg-center relative p-[20px] py-[30px] lg:py-0">
               <div className="overlay"></div>
               <div className="relative w-full h-full">

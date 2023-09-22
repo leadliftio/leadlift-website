@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 import brandLogo from "../Assets/Images/brandLogo.svg";
@@ -7,10 +12,10 @@ import brandLogo from "../Assets/Images/brandLogo.svg";
 const Footer = () => {
   return (
     <footer className="footer bottom-0 w-full bg-[#EDF0F8] px-[30px] py-[65px] mb-[0px] md:px-[150px] md:py-[100px]">
-      <div className="container max-w-[1200px] mx-auto">
+      <div className="container max-w-[1200px] relative mx-auto">
         <div className="w-full flex flex-col">
-          <div className="footer-links md:mb-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-[18px]">
-            <div className="flex">
+          <div className="footer-links md:mb-8 flex flex-col md:flex-row items-start md:items-center justify-center gap-[18px]">
+            <div className="flex lg:absolute lg:left-0">
               <Link to={"/"} className="">
                 <img src={brandLogo} alt="LeadLift" className="h-[32px]" />
               </Link>
@@ -32,7 +37,6 @@ const Footer = () => {
                 About Leadlift
               </Link>
             </ul>
-            <div className=""></div>
           </div>
           <div className="social-media w-full flex items-center justify-center gap-9 mb-6">
             <Link
