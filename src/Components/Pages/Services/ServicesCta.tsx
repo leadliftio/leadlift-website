@@ -39,7 +39,7 @@ const ServicesCta = () => {
             />
           </div>
           <div className="flex items-center justify-between flex-wrap gap-3 mt-[50px] lg:mt-0">
-            <div className="relative lg:absolute lg:bottom-[50%] lg:right-[150px]">
+            <div className="relative lg:absolute lg:bottom-[50%] lg:right-[50px]">
               <TextPill>Data-driven Insight</TextPill>
             </div>
 
@@ -51,7 +51,7 @@ const ServicesCta = () => {
             <div className="relative lg:absolute lg:bottom-[235px] lg:right-[0px]">
               <TextPill>Save Time</TextPill>
             </div>
-            <div className="relative lg:absolute lg:bottom-[50%] lg:left-[217px]">
+            <div className="relative lg:absolute lg:bottom-[50%] lg:left-[100px]">
               <TextPill>Flexibility</TextPill>
             </div>
             <div className="relative lg:absolute lg:top-[100px] lg:right-[16%]">

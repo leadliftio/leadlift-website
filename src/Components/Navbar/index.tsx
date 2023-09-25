@@ -99,11 +99,11 @@ const Navbar = () => {
                 className="text-brandBlack font-normal font-openSans text-[20px]">
                 Pricing
               </Link>
-              {/* <Link
-                to="/blog"
+              <Link
+                to="https://blog.leadlift.io"
                 className="text-brandBlack font-normal font-openSans text-[20px]">
                 Blog
-              </Link> */}
+              </Link>
             </div>
             <div className="hidden lg:flex">
               <SolidGreenButton width="200px" onClick={handleBookACall}>
@@ -132,8 +132,8 @@ const Navbar = () => {
       </nav>
       {/* <div className="w-screen h-screen overflow-hidden"> */}
       <div
-        className={`w-full bg-[#EDF0F8] h-[550px] rounded-[25px] px-[16px] py-[24px] fixed z-[8080] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
-          isOpen ? "translate-y-[0]" : "translate-y-[-550px] z-[8500]"
+        className={`w-full bg-[#EDF0F8] h-[600px] rounded-[25px] px-[16px] py-[24px] fixed z-[8080] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
+          isOpen ? "translate-y-[0]" : "translate-y-[-600px] z-[8500]"
         }`}
         ref={mobileNavRef}>
         <div className="h-[90%] pt-[65px] pb-[16px] flex flex-col justify-between relative z-50">
@@ -159,12 +159,12 @@ const Navbar = () => {
               className="pb-[20px] border-b border-solid border-[#D9D9D9]">
               Pricing
             </Link>
-            {/* <Link
+            <Link
               to="/blog"
-              className="text-brandBlack font-medium font-outfit text-[24px]"
+              className="pb-[20px] border-b border-solid border-[#D9D9D9]"
               onClick={() => setOpen(false)}>
               Blog
-            </Link> */}
+            </Link>
           </div>
           <div className="w-full mt-[30px]">
             <SolidGreenButton width="100%" onClick={handleBookACall}>

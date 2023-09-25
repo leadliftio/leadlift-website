@@ -1,7 +1,8 @@
 import React from "react";
-import phone from "../../Assets/Images/phone_1.png";
-import laptop from "../../Assets/Images/laptop.png";
+
 import image_group from "../../Assets/Images/group_3x.png";
+import laptop from "../../Assets/Images/laptop.png";
+import phone from "../../Assets/Images/phone_1.png";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <div className="container max-w-[1200px] mx-auto">
         <div
           className="w-full flex flex-col-reverse md:flex-row items-start gap-[50px] md:gap-[90px]
-        p-4 mdpx-[150px] py-5 md:py-[100px]">
+        p-4 lg:px-0 mdpx-[150px] py-5 md:py-[100px]">
           <div className="w-full md:w-[48%]">
             <h2 className="text-[28px] md:text-[64px] text-brandBlue font-montserrat font-bold mb-4 md:mb-[32px] leading-[normal]">
               Build yourself and your brand with Leadlift
