@@ -160,7 +160,7 @@ const Navbar = () => {
               Pricing
             </Link>
             <Link
-              to="/blog"
+              to="https://blog.leadlift.io"
               className="pb-[20px] border-b border-solid border-[#D9D9D9]"
               onClick={() => setOpen(false)}>
               Blog
