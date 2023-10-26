@@ -14,13 +14,13 @@ const Footer = () => {
     <footer className="footer bottom-0 w-full bg-[#EDF0F8] px-[30px] py-[65px] mb-[0px] md:px-[150px] md:py-[100px]">
       <div className="container max-w-[1200px] relative mx-auto">
         <div className="w-full flex flex-col">
-          <div className="footer-links md:mb-8 flex flex-col md:flex-row items-start md:items-center justify-center gap-[18px]">
-            <div className="flex lg:absolute lg:left-0">
+          <div className="footer-links md:mb-8 flex flex-col md:flex-row items-center md:items-center justify-center gap-[18px]">
+            <div className="flex lg:absolute lg:left-0 self-start">
               <Link to={"/"} className="">
                 <img src={brandLogo} alt="LeadLift" className="h-[32px]" />
               </Link>
             </div>
-            <ul className="flex flex-wrap md:flex-nowrap text-center justify-center items-center gap-8 gap-y-[10px] md:gap-16 px-5">
+            <ul className="flex flex-wrap md:flex-nowrap text-center justify-center items-center gap-6 gap-y-[10px] md:gap-16 px-5">
               <Link
                 to="/terms-of-use"
                 className="font-outfit text-brandBlack text-base md:text-[18px] font-normal flex-1 flex-grow flex-nowrap flex">
@@ -38,7 +38,7 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <div className="social-media w-full flex items-center justify-center gap-9 mb-6">
+          <div className="social-media w-full flex items-center justify-center gap-9 my-6">
             <Link
               to="https://www.linkedin.com/company/lead_/"
               className="linkedin social-media-icon text-white">
