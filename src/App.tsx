@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
@@ -14,10 +14,15 @@ import SuccessPopup from "./Components/SuccessPopup";
 import toast, { Toaster } from "react-hot-toast";
 
 function App() {
-  toast.error("error");
+
+  useEffect(() => {
+    window.scroll(0, 0)
+  })
+
+  // toast.error("error");
   return (
     <div className="App">
-      <Toaster
+      {/* <Toaster
         position="top-center"
         reverseOrder={false}
         gutter={8}
@@ -36,8 +41,8 @@ function App() {
             width: "100%",
             textAlign: "start",
           },
-        }}
-      />
+        }} 
+      />*/}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/book-a-call" element={<BookACallPage />} />

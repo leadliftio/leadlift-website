@@ -33,7 +33,7 @@ const OurServices = () => {
                     className="w-full lg:w-7/12 flex flex-col h-full justify-center mb-[90px]"
                     data-aos="fade-down"
                     data-aos-offset="500"
-                    data-aos-duration="750"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
                     data-aos-once="true">
@@ -63,7 +63,7 @@ const OurServices = () => {
                     className="w-full lg:w-5/12 flex justify-end lg:justify-center items-end lg:mb-0 mb-[-75px] lg:px-10"
                     data-aos="fade-left"
                     data-aos-offset="500"
-                    data-aos-duration="750"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
                     data-aos-once="true">
@@ -90,7 +90,7 @@ const OurServices = () => {
                     className="w-full lg:w-5/12 flex justify-start lg:justify-center items-end lg:mb-0 mb-[-50px]"
                     data-aos="fade-right"
                     data-aos-offset="500"
-                    data-aos-duration="750"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
                     data-aos-once="true">
@@ -100,7 +100,7 @@ const OurServices = () => {
                     className="w-full lg:w-7/12 flex flex-col h-full justify-center mb-[90px]"
                     data-aos="fade-down"
                     data-aos-offset="500"
-                    data-aos-duration="750"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
                     data-aos-once="true">
