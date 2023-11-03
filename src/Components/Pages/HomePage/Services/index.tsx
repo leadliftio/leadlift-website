@@ -1,6 +1,12 @@
 import React from "react";
 
-import { ArchiveIcon, CommandIcon, DocumentFilterIcon, OutlineLogo, WalletIcon } from "../../../Assets/Icons";
+import {
+  ArchiveIcon,
+  CommandIcon,
+  DocumentFilterIcon,
+  OutlineLogo,
+  WalletIcon,
+} from "../../../Assets/Icons";
 import gradientIllustration from "../../../Assets/Images/gradientIllustration_2.png";
 import gradientLogo from "../../../Assets/Images/gradientLogo.png";
 import person1 from "../../../Assets/Images/person1_1.png";
@@ -10,7 +16,7 @@ import ServiceCard from "./ServiceCard";
 const OurServices = () => {
   return (
     <div>
-      <div className="container max-w-[1200px] mx-auto">
+      <div className="container max-w-[1512px] mx-auto">
         <div className="w-full bg-white z-[1000] relative">
           <div className="pt-[20px] pb-[16px] lg:py-[40px] mx-auto flex justify-center">
             <p className="font-montserrat font-bold text-brandBlue text-[28px] lg:text-[45px]">
@@ -32,11 +38,12 @@ const OurServices = () => {
                   <div
                     className="w-full lg:w-7/12 flex flex-col h-full justify-center mb-[90px]"
                     data-aos="fade-down"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    // data-aos-offset="500"
+                    data-aos-duration="1000"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
-                    data-aos-once="true">
+                    data-aos-once="true"
+                  >
                     <div className="lg:ml-[100px] mb-[40px] z-50">
                       <ServiceCard
                         Icon={WalletIcon}
@@ -50,7 +57,8 @@ const OurServices = () => {
                       // data-aos="fade-down"
                       // data-aos-offset="200"
                       // data-aos-duration="400"
-                      data-aos-easing="ease-in-sine">
+                      data-aos-easing="ease-in-sine"
+                    >
                       <ServiceCard
                         Icon={ArchiveIcon}
                         name="Content management"
@@ -62,11 +70,12 @@ const OurServices = () => {
                   <div
                     className="w-full lg:w-5/12 flex justify-end lg:justify-center items-end lg:mb-0 mb-[-75px] lg:px-10"
                     data-aos="fade-left"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    // data-aos-offset="500"
+                    data-aos-duration="1000"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
-                    data-aos-once="true">
+                    data-aos-once="true"
+                  >
                     <img src={person1} alt="" className="lg:w-fit w-1/2" />
                   </div>
                 </div>
@@ -89,21 +98,23 @@ const OurServices = () => {
                   <div
                     className="w-full lg:w-5/12 flex justify-start lg:justify-center items-end lg:mb-0 mb-[-50px]"
                     data-aos="fade-right"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    // data-aos-offset="500"
+                    data-aos-duration="1000"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
-                    data-aos-once="true">
+                    data-aos-once="true"
+                  >
                     <img src={person2} alt="" className="lg:w-fit w-1/2" />
                   </div>
                   <div
                     className="w-full lg:w-7/12 flex flex-col h-full justify-center mb-[90px]"
                     data-aos="fade-down"
-                    data-aos-offset="500"
-                    data-aos-duration="500"
+                    // data-aos-offset="500"
+                    data-aos-duration="1000"
                     data-aos-easing="ease-in-sine"
                     data-aos-mirror="false"
-                    data-aos-once="true">
+                    data-aos-once="true"
+                  >
                     <div className="lg:ml-[25%] mb-[20px] lg:mb-[40px] z-50">
                       <ServiceCard
                         Icon={DocumentFilterIcon}

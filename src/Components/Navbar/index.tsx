@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa6";
 import { Link, Router, useNavigate } from "react-router-dom";
 
-import { CustomDropdownIcon } from "../Assets/Icons";
+import { CustomDropdownIcon, LogoIcon } from "../Assets/Icons";
 import brandLogo from "../Assets/Images/brandLogo.svg";
 import CloseMenu from "../Assets/Images/Close_MD.svg";
 import MenuIcon from "../Assets/Images/menu@2x.svg";
@@ -58,10 +58,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px[150px] fixed z-[8500] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
-        <div className="container max-w-[1200px] mx-auto">
+        <div className="container max-w-[1512px] mx-auto">
           <div className="w-full flex items-center justify-between">
             <Link to={"/"} className="">
-              <img src={brandLogo} alt="LeadLift" className="h-[32px]" />
+              {/* <img src={brandLogo} alt="LeadLift" className="h-[32px]" /> */}
+              <LogoIcon />
             </Link>
 
             <div className="hidden nav-items lg:flex items-center gap-8">
@@ -100,7 +101,7 @@ const Navbar = () => {
                 Pricing
               </Link>
               <Link
-                to="https://blog.leadlift.io"
+                to="/blog" // Change to currect path
                 className="text-brandBlack font-normal font-openSans text-[20px]">
                 Blog
               </Link>

@@ -50,14 +50,15 @@ const Hero = () => {
   });
 
   return (
-    <div className="w-screen h-full lg:h-[calc(100vh-100px)] bg-white relative container max-w-[1200px] mx-auto">
+    <div className="w-screen h-full lg:h-[calc(100vh-100px)] bg-white relative container max-w-[1512px] mx-auto">
       <div className="w-full h-full text-center flex justify-center lg:items-center mb-10">
         {/* <div className="container mx-auto"> */}
         <div className="flex flex-col lg:justify-center items-center">
           <div className="w-full lg:w-[700px] mx-auto text-center px-[46px] lg:px-0 pt-[24px] lg:pt-0 pb-0 mt-0 lg:mt-0">
             <animated.h2
               className="font-montserrat text-[28px] lg:text-[45px] font-bold text-brandBlue mb-[20px] leading-[normal]"
-              style={fadeUp}>
+              style={fadeUp}
+            >
               Elevate your brand, engage your audience, and drive results with
               <span className="text-brandGreen mx-1">Leadlift</span>{" "}
               comprehensive suite of digital solutions
