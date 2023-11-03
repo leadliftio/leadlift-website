@@ -53,7 +53,7 @@ const packages: any = [
 const Pricing = () => {
   return (
     <div className="w-full px-[20px] md:px[150px] text-center bg-gradient-to-b from-[#EDF0F8] to-[#CCCCE5] pb-[70px] md:pb-[100px]">
-      <div className="container max-w-[1200px] mx-auto">
+      <div className="container max-w-[1512px] mx-auto">
         <div className="border border-solid border-[#D9D9D9] px-4 md:px-[24px] py-[25px] md:py-[50px] ">
           <h2 className="font-montserrat font-semibold text-brandBlack text-[30px] md:text-[40px] leading-[40px] mb-4 w-full md:w-[70%] mx-auto">
             Try Leadlift comprehensive suite of digital solutions
@@ -61,7 +61,8 @@ const Pricing = () => {
           <p className="mb-16 md:mb-20 font-normal font-openSans text-brandBlack text-[13px] md:text-base">
             <Link
               to="/book-a-call"
-              className="underline decoration-brandBlue cursor-pointer mx-1">
+              className="underline decoration-brandBlue cursor-pointer mx-1"
+            >
               Book a call
             </Link>
             now and experience the best solution for your business' social media

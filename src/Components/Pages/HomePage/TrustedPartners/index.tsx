@@ -6,8 +6,8 @@ import symfony from "../../../Assets/Images/symfony.png";
 const TrustedPartners = () => {
   return (
     <div className="w-screen bg-[#CCCCE5] h-full py-[20px] lg:py-[50px] px-[16px] lg:px-[210px] relative">
-      <div className="container max-w-[1200px] mx-auto">
-        <div className="hidden lg:flex w-full h-full items-center justify-between">
+      <div className="container max-w-[1512px] mx-auto">
+        <div className="hidden lg:flex w-full h-full items-center justify-center gap-[100px]">
           {/* <h6 className="text-[36px] text-brandBlue font-montserrat font-semibold">
             Trusted by:
           </h6> */}

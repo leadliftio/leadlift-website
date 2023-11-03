@@ -7,10 +7,11 @@ import phone from "../../Assets/Images/phone_1.png";
 const Hero = () => {
   return (
     <div className="w-screen h-full mb-[100px] md:mb-0 md:h-[800px] bg-white px-4">
-      <div className="container max-w-[1200px] mx-auto">
+      <div className="container max-w-[1512px] mx-auto">
         <div
           className="w-full flex flex-col-reverse md:flex-row items-start gap-[50px] md:gap-[90px]
-        p-4 lg:px-0 mdpx-[150px] py-5 md:py-[100px]">
+        p-4 lg:px-0 mdpx-[150px] py-5 md:py-[100px]"
+        >
           <div className="w-full md:w-[48%]">
             <h2 className="text-[28px] md:text-[64px] text-brandBlue font-montserrat font-bold mb-4 md:mb-[32px] leading-[normal]">
               Build yourself and your brand with Leadlift
