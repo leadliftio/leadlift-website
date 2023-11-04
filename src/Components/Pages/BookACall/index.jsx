@@ -132,7 +132,7 @@ const BookACall = () => {
         className="
       py-[40px] px-[16px] md:py-[50px] mdpl-[150px] mdpr-[100px] "
       >
-        <div className="container max-w-[1512px] mx-auto">
+        <div className="container max-w-[1200px] mx-auto">
           <div className="flex flex-col gap-0 md:gap-0 md:flex-row items-start">
             <div className="w-full pr-0 md:pr[120px] flex-[0.75]">
               <h2 className="text-[#23282B] font-montserrat font-bold text-[40px] mb-[20px] md:mb-[65px] leading-[normal]">

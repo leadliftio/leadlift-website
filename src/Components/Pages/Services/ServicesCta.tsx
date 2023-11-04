@@ -13,7 +13,7 @@ export const TextPill = ({ children }: any) => {
 const ServicesCta = () => {
   return (
     <div className="w-full h-full lg:h-[850px] bg-[#CCCCE5]">
-      <div className="container max-w-[1512px] mx-auto w-full h-full flex justify-center items-center relative py-[50px] px-[16px] lg:px-0">
+      <div className="container max-w-[1200px] mx-auto w-full h-full flex justify-center items-center relative py-[50px] px-[16px] lg:px-0">
         <div className="">
           <div className="flex items-center flex-wrap justify-between gap-4 mb-[20px] lg:mb-0">
             <div className="relative lg:absolute lg:top-[100px] lg:left-[16%]">

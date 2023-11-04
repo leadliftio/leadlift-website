@@ -16,7 +16,7 @@ import ServiceCard from "./ServiceCard";
 const OurServices = () => {
   return (
     <div>
-      <div className="container max-w-[1512px] mx-auto">
+      <div className="container max-w-[1200px] mx-auto">
         <div className="w-full bg-white z-[1000] relative">
           <div className="pt-[20px] pb-[16px] lg:py-[40px] mx-auto flex justify-center">
             <p className="font-montserrat font-bold text-brandBlue text-[28px] lg:text-[45px]">

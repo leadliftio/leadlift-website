@@ -57,8 +57,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px-[150px] fixed z-[8500] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
-        <div className="container max-w-[1512px] mx-auto">
+      <nav className="w-screen bg-[#EDF0F8] p-[16px] fixed z-[8500] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)]">
+        <div className="container max-w-[1200px] mx-auto">
           <div className="w-full flex items-center justify-between">
             <Link to={"/"} className="">
               {/* <img src={brandLogo} alt="LeadLift" className="h-[32px]" /> */}

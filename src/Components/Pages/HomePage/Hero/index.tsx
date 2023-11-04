@@ -50,7 +50,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="w-screen h-full lg:h-[calc(100vh-100px)] bg-white relative container max-w-[1512px] mx-auto">
+    <div className="w-screen h-full lg:h-[calc(100vh-100px)] bg-white relative container max-w-[1200px] mx-auto">
       <div className="w-full h-full text-center flex justify-center lg:items-center mb-10">
         {/* <div className="container mx-auto"> */}
         <div className="flex flex-col lg:justify-center items-center">
