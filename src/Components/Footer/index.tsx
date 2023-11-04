@@ -12,7 +12,7 @@ import brandLogo from "../Assets/Images/brandLogo.svg";
 const Footer = () => {
   return (
     <footer className="footer bottom-0 w-full bg-[#EDF0F8] px-[30px] py-[65px] mb-[0px] md:px-[150px] md:py-[100px]">
-      <div className="container max-w-[1512px] relative mx-auto">
+      <div className="container max-w-[1200px] relative mx-auto">
         <div className="w-full flex flex-col">
           <div className="footer-links md:mb-8 flex flex-col md:flex-row items-center md:items-center justify-center gap-[18px]">
             <div className="flex lg:absolute lg:left-0 self-start">

@@ -352,7 +352,6 @@ export const LogoIcon = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <rect width="67.5862" height="48" fill="url(#pattern0)" />
-
       <g clip-path="url(#clip0_1239_917)">
         <path
           d="M81.0353 12.5448H73.3047V48.1397H94.9675V41.2233H81.0353V12.5448Z"
