@@ -57,7 +57,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-screen bg-[#EDF0F8] md:py-[22px] p-[16px] md:px[150px] fixed z-[8500] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)] md:shadow-none">
+      <nav className="w-screen bg-[#EDF0F8] p-[16px] fixed z-[8500] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)]">
         <div className="container max-w-[1512px] mx-auto">
           <div className="w-full flex items-center justify-between">
             <Link to={"/"} className="">
@@ -77,7 +77,8 @@ const Navbar = () => {
                       ? "opacity-100"
                       : "opacity-0 pointer-events-none"
                   }`}
-                  ref={dropdownRef}>
+                  ref={dropdownRef}
+                >
                   {/* Dropdown */}
                   <div className=" flex flex-col gap-[6px] text-brandBlack font-openSans text-[14px] font-normal">
                     <a href="/our-services/#social-media-management">
@@ -97,12 +98,14 @@ const Navbar = () => {
               </div>
               <Link
                 to="/pricing"
-                className="text-brandBlack font-normal font-openSans text-[20px]">
+                className="text-brandBlack font-normal font-openSans text-[20px]"
+              >
                 Pricing
               </Link>
               <Link
-                to="/blog" // Change to currect path
-                className="text-brandBlack font-normal font-openSans text-[20px]">
+                to="https://blog.leadlift.io" // Change to currect path
+                className="text-brandBlack font-normal font-openSans text-[20px]"
+              >
                 Blog
               </Link>
             </div>
@@ -113,7 +116,8 @@ const Navbar = () => {
             </div>
             <div
               className="block lg:hidden w-8 h-8 border border-solid border-[#D3D3D3] rounded-[4px]"
-              onClick={() => setOpen(!isOpen)}>
+              onClick={() => setOpen(!isOpen)}
+            >
               {/* <Hamburger
                 toggled={isOpen}
                 toggle={setOpen}
@@ -136,7 +140,8 @@ const Navbar = () => {
         className={`w-full bg-[#EDF0F8] h-[600px] rounded-[25px] px-[16px] py-[24px] fixed z-[8080] flex flex-col divide-y-2 shadow-card transition-all duration-500 ${
           isOpen ? "translate-y-[0]" : "translate-y-[-600px] z-[8500]"
         }`}
-        ref={mobileNavRef}>
+        ref={mobileNavRef}
+      >
         <div className="h-[90%] pt-[65px] pb-[16px] flex flex-col justify-between relative z-50">
           <div className="flex flex-col gap-[20px] text-brandBlack font-normal font-openSans text-[20px]">
             <div className="text-brandBlack flex items-center gap-[6px] group relative">
@@ -157,13 +162,15 @@ const Navbar = () => {
             <Link
               to="/pricing"
               onClick={() => setOpen(false)}
-              className="pb-[20px] border-b border-solid border-[#D9D9D9]">
+              className="pb-[20px] border-b border-solid border-[#D9D9D9]"
+            >
               Pricing
             </Link>
             <Link
               to="https://blog.leadlift.io"
               className="pb-[20px] border-b border-solid border-[#D9D9D9]"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+            >
               Blog
             </Link>
           </div>
@@ -176,25 +183,29 @@ const Navbar = () => {
         <div className="social-media w-full flex items-center justify-center gap-9 mb-6 py-[16px]">
           <Link
             to="https://www.linkedin.com/company/lead_/"
-            className="linkedin social-media-icon text-white">
+            className="linkedin social-media-icon text-white"
+          >
             <FaLinkedinIn />
           </Link>
           <Link
             to="https://twitter.com/leadliftio"
             target="_blank"
-            className="linkedin social-media-icon text-white">
+            className="linkedin social-media-icon text-white"
+          >
             <FaTwitter />
           </Link>
           <Link
             to="https://www.facebook.com/leadliftio"
             target="_blank"
-            className="linkedin social-media-icon text-white">
+            className="linkedin social-media-icon text-white"
+          >
             <FaFacebookF />
           </Link>
           <Link
             to="https://www.instagram.com/leadliftio/"
             target="_blank"
-            className="linkedin social-media-icon text-white">
+            className="linkedin social-media-icon text-white"
+          >
             <FaInstagram />
           </Link>
         </div>
