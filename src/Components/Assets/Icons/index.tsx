@@ -345,13 +345,13 @@ export const LogoIcon = () => {
   return (
     <svg
       width="239"
-      height="56"
+      height="48"
       viewBox="0 0 239 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <rect width="67.5862" height="56" fill="url(#pattern0)" />
+      <rect width="67.5862" height="48" fill="url(#pattern0)" />
       <g clip-path="url(#clip0_1239_917)">
         <path
           d="M81.0353 12.5448H73.3047V48.1397H94.9675V41.2233H81.0353V12.5448Z"
