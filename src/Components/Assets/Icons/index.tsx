@@ -344,8 +344,9 @@ export const CallBookingSuccessIcon = () => {
 export const LogoIcon = () => {
   return (
     <svg
-      width="239"
-      height="48"
+      className='lg:w-[239px]
+      lg:h-[48px] w-[139px]
+      h-[38px]'
       viewBox="0 0 239 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
